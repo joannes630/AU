@@ -12,7 +12,7 @@ public class IntBubbleSorter
       @param array The array to sort.
    */
    
-   public static void bubbleSort(int[] array)
+   public void bubbleSort(int[] array)
    {
       int lastPos;     // Position of last element to compare
       int index;       // Index of an element to compare
@@ -54,7 +54,8 @@ public class IntBubbleSorter
          System.out.print(element + " ");
       
       // Sort the array.
-      bubbleSort(values);
+      IntBubbleSorter obj = new IntBubbleSorter();
+      obj.bubbleSort(values);
 
       // Display the array's contents.
       System.out.println("\nSorted order: ");
