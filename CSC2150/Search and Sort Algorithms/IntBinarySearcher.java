@@ -57,6 +57,7 @@ public class IntBinarySearcher
 
    public static void main(String[] args)
    {
+      // Before doing a binary search, the array has to be sorted.
       int[] tests = { 75, 82, 87, 99, 100};
       int results;
 
