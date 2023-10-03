@@ -12,7 +12,7 @@ public class IntSelectionSorter
       @param array The array to sort.
    */
 
-   public static void selectionSort(int[] array)
+   public void selectionSort(int[] array)
    {
       int startScan;   // Starting position of the scan
       int index;       // To hold a subscript value
@@ -59,7 +59,8 @@ public class IntSelectionSorter
          System.out.print(element + " ");
       
       // Sort the array.
-      selectionSort(values);
+      IntSelectionSorter obj = new IntSelectionSorter();
+      obj.selectionSort(values);
 
       // Display the array's contents.
       System.out.println("\nSorted order: ");
