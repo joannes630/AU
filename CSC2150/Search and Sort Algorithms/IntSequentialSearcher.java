@@ -13,7 +13,7 @@ public class IntSequentialSearcher
               array, otherwise -1.
    */
 
-   public static int search(int[] array, int value)
+   public int search(int[] array, int value)
    {
       int index;        // Loop control variable
       int position;     // Position the value is found at
@@ -46,10 +46,11 @@ public class IntSequentialSearcher
    public static void main(String[] args)
    {
       int[] tests = { 87, 75, 99, 82, 100 };
+      IntSequentialSearcher obj = new IntSequentialSearcher();
       int results;
 
       // Search the array for the value 100.
-      results = search(tests, 100);
+      results = obj.search(tests, 100);
 
       // Determine whether 100 was found and
       // display an appropriate message.
