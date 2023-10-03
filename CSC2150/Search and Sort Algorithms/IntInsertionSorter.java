@@ -12,7 +12,7 @@ public class IntInsertionSorter
       @param array The array to sort.
    */
 
-   public static void insertionSort(int[] array)
+   public void insertionSort(int[] array)
    {
       int unsortedValue;  // The first unsorted value
       int scan;           // Used to scan the array
@@ -56,7 +56,8 @@ public class IntInsertionSorter
          System.out.print(element + " ");
       
       // Sort the array.
-      insertionSort(values);
+      IntInsertionSorter obj = new IntInsertionSorter();
+      obj.insertionSort(values);
 
       // Display the array's contents.
       System.out.println("\nSorted order: ");
