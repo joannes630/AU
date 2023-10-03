@@ -15,7 +15,7 @@ public class IntBinarySearcher
       @param value The value to search for.
    */
 
-   public static int search(int[] array, int value)
+   public int search(int[] array, int value)
    {
       int first;       // First array element
       int last;        // Last array element
@@ -62,7 +62,8 @@ public class IntBinarySearcher
       int results;
 
       // Search the array for the value 100.
-      results = search(tests, 100);
+      IntBinarySearcher obj = new IntBinarySearcher();
+      results = obj.search(tests, 100);
 
       // Determine whether 100 was found and
       // display an appropriate message.
