@@ -51,11 +51,15 @@ public class BinarySearchBigO
             position = middle;
          }
          // else if value is in lower half...
-         else if (array[middle] > value)
+         else if (array[middle] > value) {
             last = middle - 1;
+            System.out.printf("first is %d, last is %d, middle is %d\n", first, last, middle);
+         }
          // else if value is in upper half....
-         else
+         else {
             first = middle + 1;
+            System.out.printf("first is %d, last is %d, middle is %d\n", first, last, middle);
+         }
       }
       System.out.println("Searched " + count + " times");
 

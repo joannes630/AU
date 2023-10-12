@@ -16,6 +16,7 @@ public class SequentialSearchBigO
       // Search the array.
       while (!found && index < array.length)
       {
+         System.out.printf("array[%d] = %d\n", index, array[index]);
          if (array[index] == value)
          {
             found = true;
