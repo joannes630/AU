@@ -35,11 +35,14 @@ public class BigOGraphIt {
 
     // https://letstalkscience.ca/educational-resources/backgrounders/gauss-summation
     public static int gauss(int[] array) {
+        int count = 0;
         int n = array.length;
         int first = array[0];
         int last = array[array.length-1];
         int sum = n/2 * (first + last);
-        return sum;
+        count++;
+        System.out.printf("%d  %d\n", array.length, count);
+     return sum;
     }
 
     public static void main(String[] args) {
