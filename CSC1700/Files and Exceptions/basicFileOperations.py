@@ -2,6 +2,7 @@ def readFile():
     file = open("myFile.txt", "r")
     content = file.read()
     print(content)
+    file.close()
 
 def appendFile():
     file = open("myFile.txt", "a")
