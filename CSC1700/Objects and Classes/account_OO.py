@@ -14,14 +14,11 @@ class BankAccount:
         return self.balance
 
 def main():
-    start_bal = float(input("Enter John's starting balance: "))
-    johnAccount = BankAccount(start_bal)
-    pay = float(input("How much were you paid this week? "))
-    johnAccount.deposit(pay)
-    print(f"Your account balance is ${johnAccount.get_balance():,.2f}.")
-    cash = float(input("How much would you like to withdraw? "))
-    johnAccount.withdraw(cash)
-
-    print(f"John's account balance is ${johnAccount.get_balance():,.2f}.")
+    johnAccount = BankAccount(0)
+    print(f"Your initial balance is ${johnAccount.get_balance():,.2f}.")
+    johnAccount.deposit(100)
+    print(f"Your account balance after deposit is ${johnAccount.get_balance():,.2f}.")
+    johnAccount.withdraw(25)
+    print(f"John's account balance after withdrawal is ${johnAccount.get_balance():,.2f}.")
 
 main()
