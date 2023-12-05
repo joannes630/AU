@@ -12,7 +12,7 @@ def bubble_sort(arr):
                 arr[j+1] = temp
 
 
-def search(x, arr):
+def linearSearch(x, arr):
     # Not the most efficient way to search a sorted array
     found = False
     i = 0
@@ -22,20 +22,29 @@ def search(x, arr):
             found = True
         i = i+1
 
-    if not found:
+    if found:
+        print(f"{x} was found")
+    else:
         print(f"{x} was not found")
 
+def binarySearch(x, arr):
+    low = 0
+    high = len(arr)-1
+    found = False
+    while low <= high and not found:
+        mid = low + (high - low) // 2
 
-    # found = False
-    # for i in range(len(arr)):
-    #     if x == arr[i]:
-    #         print(f"Found {x}")
-    #         found = True
-    #         break
-    #
-    # if not found:
-    #     print(f"{x} was not found")
+        if arr[mid] == x:
+            found = True
+        elif arr[mid] < x:
+            low = mid + 1
+        else:
+            high = mid - 1
 
+    if found:
+        print(f"{x} was found")
+    else:
+        print(f"{x} was not found")
 
 def main():
     my_list = [64, 34, 25, 12, 22, 11, 90]
@@ -43,6 +52,7 @@ def main():
     bubble_sort(my_list)
     print("Sorted array:  ", my_list)
 
-    search(12, my_list)
+    linearSearch(11, my_list)
+    binarySearch(11, my_list)
 
 main()
