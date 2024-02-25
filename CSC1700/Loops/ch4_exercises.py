@@ -1,3 +1,5 @@
+#CSC-1700 SP24
+
 #1
 # number = int(input("Enter a number: "))
 # product = number * 10
