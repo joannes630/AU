@@ -2,7 +2,7 @@
 number = 0
 
 def main():
-#    global number
+    global number
     number = int(input('Enter a number: '))
     show_number()
 
