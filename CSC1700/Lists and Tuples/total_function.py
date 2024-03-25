@@ -1,6 +1,7 @@
 def main():
     numbers = [2, 4, 6, 8, 10]
-    print(f'The total is {get_total(numbers)}.')
+    total = get_total(numbers)
+    print(f'The total is {total}')
 
 def get_total(value_list):
     total = 0
