@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class Float {
     public static void main(String[] args)
     {
         final double tolerance = 1e-5;
