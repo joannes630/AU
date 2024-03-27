@@ -1,11 +1,12 @@
 def main():
-    values = [[1,   2,   3],
-              [10,  20,  30],
-              [100, 200, 300]]
+    students = [['Joe', 'Kim'],
+                ['Sam', 'Sue'],
+                ['Kelly', 'Chris']]
+    print(students)
 
-    for row in values:
-        for element in row:
-            print(element)
+    # Accessing the 2-D list via index
+    for i in range(len(students)):
+        for j in range(len(students[i])):
+            print(students[i][j])
 
-if __name__ == '__main__':
-    main()
+main()
