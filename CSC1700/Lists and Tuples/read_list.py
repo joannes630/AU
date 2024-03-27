@@ -5,7 +5,7 @@ def main():
     infile.close()
 
     for index in range(len(cities)):
-        cities[index] = cities[index].rstrip('\n')
+        cities[index] = cities[index].strip()
 
     print(cities)
 
