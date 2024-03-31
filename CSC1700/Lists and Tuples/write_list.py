@@ -9,3 +9,22 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+"""
+item = "New York"
+file:
+"New York\n"
+
+item = "Boston"
+file:
+"New York\nBoston\n"
+
+item = "Atlanta"
+file:
+"New York\nBoston\nAtlanta\n"
+
+item = "Dallas"
+file:
+"New York\nBoston\nAtlanta\nDallas\n"
+
+"""
