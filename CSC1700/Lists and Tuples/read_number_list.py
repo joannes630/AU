@@ -27,5 +27,6 @@ For each iteration, we overwrite the content of our list
 converting it from a string to an integer
 
 Then we simply print the list, which is now a list of integers. 
+numbers = [1, 2, 3, 4, 5, 6, 7]
 
 """
