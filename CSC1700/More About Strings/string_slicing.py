@@ -24,4 +24,16 @@ def main():
     last = name[11:]
     print(first, last)
 
+    """
+    You can also use negative number to index to the string.
+    With negative index, the position will start from the end of the string
+    such that -1 is the last character, -2 is second from last, -3 is third
+    from last, and so on.
+    Using the string, "Patty Lynn Smith", the index -5 will reference the 
+    fifth character from last, such that
+    last = name[-5:] will reference "Smith"
+    """
+    last = name[-5:]
+    print(last)
+
 main()
