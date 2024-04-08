@@ -19,7 +19,7 @@ def main():
     last name since there is a middle name. One solution is use the method
     rfind(), to start the search from the end (rear) of the string.
     '''
-    idx = name.find(' ', idx+1)
+    idx = name.rfind(' ')
     last = name[idx+1:]
     print(last)
 
