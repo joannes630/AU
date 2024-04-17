@@ -32,4 +32,6 @@ for i in range(len(my_2dlist)):
         total += my_2dlist[i][j]
         count += 1
     avg = total / count
-    print(avg)
+    print("\t", avg)
+
+    
