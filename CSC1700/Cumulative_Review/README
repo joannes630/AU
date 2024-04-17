@@ -10,6 +10,7 @@
 - Averaging of rows (avg_with_index.py, avg_without_index.py) 
 
 Dictionary 
+- Running Total of values (total_without_index.py) 
 - Averaging of values (avg_without_index.py) 
 - Search using a key (dict_search_using_key.py) 
 - Search using a value (dict_search_using_value.py) 
