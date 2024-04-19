@@ -1,16 +1,16 @@
 # This is object oriented programming
 class BankAccount:
     def __init__(self, bal):
-        self.__balance = bal
+        self.balance = bal
 
     def deposit(self, amount):
-        self.__balance += amount
+        self.balance += amount
 
     def withdraw(self, amount):
-        self.__balance -= amount
+        self.balance -= amount
 
     def get_balance(self):
-        return self.__balance
+        return self.balance
 
 def main():
     account = BankAccount(0)
