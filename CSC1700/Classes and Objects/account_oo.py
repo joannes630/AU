@@ -1,5 +1,13 @@
 class Account:
-    def __init__(self, name, phone, addr):
+    def __init__(self):
+        self.name = None
+        self.phone = None
+        self.addr = None
+
+    def get_info(self):
+        name = input("Enter name: ")
+        phone = input("Enter phone number: ")
+        addr = input("Enter address: ")
         self.name = name
         self.phone = phone
         self.addr = addr
@@ -10,10 +18,12 @@ class Account:
         print(f"Address: {self.addr}")
 
 def main():
-    account1 = Account("John", "123-4567", "10 Maple St.")
+    account1 = Account()
+    account1.get_info()
     account1.display_account()
 
-    account2 = Account("Tim", "234-5678", "10 Maple St.")
+    account2 = Account()
+    account2.get_info()
     account2.display_account()
 
 main()
