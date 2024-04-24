@@ -13,13 +13,14 @@ class BankAccount:
         return self.balance
 
 def main():
-    account = BankAccount(0)
+    # Create an account object with $10 initial deposit
+    account = BankAccount(10)
     print(f"Your initial balance is ${account.get_balance()}.")
-    pay = 100
-    account.deposit(pay)
+    # Deposit $100 to your account
+    account.deposit(100)
     print(f"Your account balance after deposit is ${account.get_balance()}.", )
-    cash = 25
-    account.withdraw(cash)
+    # Withdraw $25 from your account
+    account.withdraw(25)
     print(f"Your account balance after withdrawal is ${account.get_balance()}.")
 
 main()
