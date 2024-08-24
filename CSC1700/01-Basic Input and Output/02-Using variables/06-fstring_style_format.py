@@ -3,5 +3,5 @@ top_speed = 160
 distance = 300
 
 # Display the values referenced by the variables.
-print('The top speed is', top_speed, 'mph')
-print('The distance traveled is', distance, 'miles')
+print(f'The top speed is {top_speed} mph')
+print(f'The distance traveled is {distance} miles')
