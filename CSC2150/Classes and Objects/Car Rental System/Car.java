@@ -27,6 +27,7 @@ isAvailable() - Returns true if the car is available (not rented), false otherwi
 */
 
 public class Car {
+
     private String make;
     private String model;
     private boolean isAvailable;
@@ -34,34 +35,41 @@ public class Car {
     public Car(String make, String model) {
         this.make = make;
         this.model = model;
-        isAvailable = true;
+        this.isAvailable = true;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String getMake() {
+        return this.make;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getModel() {
+        return this.model;
     }
 
     public void rentCar() {
-        if (isAvailable) {
-            System.out.println("Renting the " + make + " " + model);
-            isAvailable = false;
-        }
+        if (isAvailable == false)
+            System.out.println("Car is already rented.");
         else
-            System.out.println("Sorry, car is not available");
+            isAvailable = false;
     }
 
     public void returnCar() {
-        if (!isAvailable) {
-            System.out.println("Returning the " + make + " " + model);
-            isAvailable = true;
-        }
+        if (isAvailable == true)
+            System.out.println("Car was not rented.");
         else
-            System.out.println("Hmm, " + make + " " + model + " is not rented out.");
+            isAvailable = true;
     }
 
     public boolean isAvailable() {
-        return isAvailable;
+        return this.isAvailable;
     }
 
-    @Override
-    public String toString() {
-        String status = isAvailable ? "Available" : "Rented";
-        return("Make: " + make + ", Model: " + model + ", Status: " + status);
-    }
 }
