@@ -26,6 +26,7 @@ returnCar() - Marks the car as returned.
 isAvailable() - Returns true if the car is available (not rented), false otherwise.
 */
 
+
 public class Car {
 
     private String make;
@@ -70,6 +71,12 @@ public class Car {
 
     public boolean isAvailable() {
         return this.isAvailable;
+    }
+
+    @Override
+    public String toString() {
+        String status = isAvailable ? "Available" : "Rented";
+        return("Make: " + make + ", Model: " + model + ", Status: " + status);
     }
 
 }
