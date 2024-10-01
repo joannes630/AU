@@ -1,3 +1,15 @@
+//Instructions:
+//Create an array that stores the temperatures (in degrees Celsius) for 7 days.
+//Hardcode the temperatures for the week are: 23, 27, 21, 25, 30, 26, 22
+
+//Implement the following tasks:
+
+//1. Create the array
+//2. Find the highest temperature of the week (use variable name highest).
+//3. Find the lowest temperature of the week (use variable name lowest).
+//4. Calculate the avg temperature of the week (use variable name avg).
+//5. Display the highest, lowest, and avg temperatures.
+
 public class Temperature {
     // Write your code here
     public static void main(String[] args) {
