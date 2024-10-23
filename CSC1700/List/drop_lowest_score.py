@@ -21,6 +21,7 @@ def main():
     average = ???
 
     # Display the average.
+    # If the program is correct, it should display the average as 88.5
     print('The average, with the lowest score dropped is:', average)
 
 
