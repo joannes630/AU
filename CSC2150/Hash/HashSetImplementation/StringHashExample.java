@@ -1,3 +1,4 @@
+package Hash.HashSetImplementation;
 public class StringHashExample {
 
     // A simple hash function for strings
