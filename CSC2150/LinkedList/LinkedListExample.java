@@ -72,6 +72,21 @@ class LinkedList {
         }
     }
 
+    // Method to search for a value in the list
+    public boolean search(int data) {
+        Node current = head;
+
+        // Traverse through the list
+        while (current != null) {
+            if (current.data == data) {
+                return true;  // Value found
+            }
+            current = current.next;
+        }
+
+        return false;  // Value not found
+    }
+
     // Display all the elements in the linked list
     public void printList() {
         Node current = head;
@@ -98,6 +113,10 @@ public class LinkedListExample {
 
         // Delete an element
         list.delete(20);
+
+        // Search for an item in the linked list
+        System.out.println("Is the value 30 in the list? " + list.search(30));
+
         list.printList(); // Output: 5 -> 10 -> 30 -> null
     }
 }
