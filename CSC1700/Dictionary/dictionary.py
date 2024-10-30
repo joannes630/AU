@@ -1,54 +1,89 @@
-# Creating a dictionary with key-value pairs
-phonebook = {
-    "Chris": "555-1111",
-    "Katie": "555-2222",
-    "John": "555-3333"
-}
-print(phonebook)
+'''
+Dictionary:
+    - To create an empty dictionary
+        dict = {}
+    - To create and initialize a dictionary
+        dict = {
+            "Chris": 5551111,
+            "Katie": 5552222,
+            "John":  5553333
+        }
+    - To add key/value pairs in the dictionary (Assuming key is a String and value is an integer)
+        dict["Bob"] = 2244446666
+    - To check if a key is in a dictionary
+        if "Bob" in dict:
+    - To check if a key is NOT in a dictionary
+        if "Bob" not in dict:
+    - To retrieve a value using a key
+        dict["Bob"]         --> Could crash if "Bob" is not a key
+        or
+        dict.get("Bob")     --> Would not crash if "Bob" is not a key
+    - To retrieve and delete an item in a dictionary
+        phonenumber = dict.pop("Bob")
+    - To retrieve and delete the last item in a dictionary
+        phonenumber = dict.popitem()
+    - To delete a key/value pair (item)
+        del dict["Bob"]
+    - Iterating a dictionary using keys
+        for name in dict.keys():
+            print(name, dict[name])
+    - Iterating a dictionary using values
+        for phonenumber in dict.values():
+            print(phonenumber)
+    - Iterating a dictionary using key/value pairs
+        for name, phonenumber in dict.items():
+            print(name, phonenumber)
+    - Mixing data types in a dictionary
 
-# Using the `in` operator
-if "Alice" in phonebook:
-    print(phonebook["Alice"])
-else:
-    print("Alice is not in the dictionary")
+'''
 
-# Adding an item in a dictionary
-phonebook["Bob"] = "555-4444"
-print(phonebook)
+# dict = {
+#     "Chris": 5551111,
+#     "Katie": 5552222,
+#     "John": 5553333
+# }
+# print(dict)
 
-# Deleting an item in a dictionary
-del phonebook["Bob"]
-print(phonebook)
+dict = {}
+dict["Chris"] = 5551111
+dict["Katie"] = 5552222
+dict["John"] = 5553333
+# print(dict)
 
-# Getting the number of items in the phonebook
-print(len(phonebook))
+# if "Katie" in dict:
+#     print(dict["Katie"])
+#
+# print(dict.get("Katie"))
 
-# Iterating through a dictionary
-for name in phonebook:
-    print(name, phonebook[name])
+# phonenumber = dict.pop("Katie")
+# print(phonenumber)
+# print(dict)
 
-# Another way to iterate using keys
-for key in phonebook.keys():
-    print(key)
+# phonenumber = dict.popitem()
+# print(phonenumber)
+# print(dict)
 
-# Another way to iterate using values
-for value in phonebook.values():
-    print(value)
+# del dict["Katie"]
+# print(dict)
 
-# Another way to iterate using items
-for key, value in phonebook.items():
-    print(key, value)
+# for name in dict.keys():
+#     print(name, dict[name])
 
-# Using values method
-phones = phonebook.values()
-for phone in phones:
-    print(phone)
-    
-# Using the pop method
-phone = phonebook.pop("John", None)
-print(phone)
+# for phonenumber in dict.values():
+#     print(phonenumber)
 
-# Using the popitem method
-phone = phonebook.popitem()
-print(phone)
+# for name, phonenumber in dict.items():
+#     print(name, phonenumber)
 
+test_scores = { 'Kayla' : [88, 92, 100],
+                'Luis' : [95, 74, 81],
+                'Sophie' : [72, 88, 91],
+                'Ethan' : [70, 75, 78] }
+
+for key, value in test_scores.items():
+    sum, count = 0, 0
+    for grade in value:
+        sum += grade
+        count += 1
+    avg = sum / count
+    print(f"{key}, {avg:.2f}")
