@@ -1,5 +1,3 @@
-package LinkedList;
-
 // Node class for singly linked list
 class Node {
     int data;      // Value stored in the node
@@ -12,17 +10,28 @@ class Node {
     }
 }
 
-// LinkedList class
-class LinkedList {
+// SinglyLinkedList class
+class SinglyLinkedList {
     Node head;     // Head of the linked list
 
     // Constructor to create an empty list
-    public LinkedList() {
+    public SinglyLinkedList() {
         head = null;
+    }
+
+    // Add a new node at the beginning of the list
+    public void prepend(int data) {
+        Node newNode = new Node(data);
+        newNode.next = head; // The new node points to the current head
+        head = newNode;      // Update the head to the new node
     }
 
     // Add a new node at the end of the list
     public void append(int data) {
+		/* Scenarios:
+		 * 1. The list is empty
+		 * 2. The list is not empty
+		 */
         // Create a new node
         Node newNode = new Node(data);
 
@@ -38,38 +47,6 @@ class LinkedList {
             current = current.next;
         }
         current.next = newNode;
-    }
-
-    // Add a new node at the beginning of the list
-    public void prepend(int data) {
-        Node newNode = new Node(data);
-        newNode.next = head; // The new node points to the current head
-        head = newNode;      // Update the head to the new node
-    }
-
-    // Delete the first node with the specified value
-    public void delete(int data) {
-        // If the list is empty, return
-        if (head == null) {
-            return;
-        }
-
-        // If the node to be deleted is the head
-        if (head.data == data) {
-            head = head.next; // Move the head to the next node
-            return;
-        }
-
-        // Traverse the list to find the node to delete
-        Node current = head;
-        while (current.next != null && current.next.data != data) {
-            current = current.next;
-        }
-
-        // If the node is found, skip over it
-        if (current.next != null) {
-            current.next = current.next.next;
-        }
     }
 
     // Method to search for a value in the list
@@ -96,11 +73,43 @@ class LinkedList {
         }
         System.out.println("null");
     }
+    
+    // Delete the first node with the specified value
+    public void delete(int data) {
+		/* Scenarios:
+		 * 1. List is empty
+		 * 2. The node to delete is at the head
+		 * 3. The node to delete is in the middle or end
+		 * 4. The node to delete is not in the list
+		 */
+		 
+        // If the list is empty, return
+        if (head == null) {
+            return;
+        }
+
+        // If the node to be deleted is the head
+        if (head.data == data) {
+            head = head.next; // Move the head to the next node
+            return;
+        }
+
+        // Traverse the list to find the node to delete
+        Node current = head;
+        while (current.next != null && current.next.data != data) {
+            current = current.next;
+        }
+
+        // If the node is found, skip over it
+        if (current.next != null) {
+            current.next = current.next.next;
+        }
+    }
 }
 
-public class LinkedListExample {
+public class SinglyLinkedListExample {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        SinglyLinkedList list = new SinglyLinkedList();
 
         // Add elements to the list
         list.append(10);
