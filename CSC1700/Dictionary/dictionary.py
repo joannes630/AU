@@ -24,6 +24,9 @@ Dictionary:
         phonenumber = dict.popitem()
     - To delete a key/value pair (item)
         del dict["Bob"]
+    - Iterating a dictionary 
+        for name in dict:
+            print(name, dict[name])
     - Iterating a dictionary using keys
         for name in dict.keys():
             print(name, dict[name])
@@ -34,7 +37,6 @@ Dictionary:
         for name, phonenumber in dict.items():
             print(name, phonenumber)
     - Mixing data types in a dictionary
-
 '''
 
 # dict = {

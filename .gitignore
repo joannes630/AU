@@ -1,6 +1,8 @@
 
 # Ignore all .class files
 *.class
+*.pyc
+*.answer.py
 
 # Ignore Programming Assignments folders
 PA/
