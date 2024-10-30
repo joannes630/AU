@@ -1,31 +1,40 @@
-import java.util.HashMap;
+package Hash.HashSet;
+import java.util.HashSet;
+
+/*
+    HashSet methods:
+        add(key)            --> inserts a key
+        remove(key)         --> removes a key
+        contains(key)       --> checks if the HashSet contains the key
+        size()              --> returns the size of the HashSet
+        isEmpty()           --> checks if the HashSet is empty
+        clear()             --> clears the HashSet
+ */
 
 public class BasicOperations {
     public static void main(String[] args) {
-        HashMap<String, Integer> studentScores = new HashMap<>();
+        HashSet<Integer> set = new HashSet<>();
 
-        studentScores.put("Xavier", 85);
-        studentScores.put("Charlie", 78);
-        studentScores.put("Diana", 88);
-        studentScores.put("Bob", 92);
-        studentScores.put("Augusta", 92);
+        set.add(3);
+        set.add(5);
+        set.add(2);
+        set.add(8);
+        set.add(3);
+        set.add(2);
+        System.out.println(set);
 
-        System.out.println("Bob's score: ");
-
-        if (studentScores.containsKey("Charlie")) {
-            System.out.println("Charlie's score is recorded");
-        }
-        else {
-            System.out.println("No score found for Charlie.");
-        }
-
-        for (String key : studentScores.keySet()) {
-            System.out.println(key + ": " + studentScores.get(key));
+        // You cannot use an index in a Hash data structure
+        // You have to use an enhanced for loop, or an iterator
+        for (Integer number: set) {
+            System.out.println(number);
         }
 
-        System.out.println("\nUsing entrySet(): ");
-        for (var entry : studentScores.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
+        set.remove(5);
+        System.out.println(set);
+
+        if (set.contains(3))
+            System.out.println("The hash set contains 3");
+        else
+            System.out.println("The hash set does NOT contain 3");
     }
 }
