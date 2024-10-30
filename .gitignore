@@ -1,2 +1,6 @@
 
+# Ignore all .class files
 *.class
+
+# Ignore Programming Assignments folders
+PA/
