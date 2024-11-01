@@ -25,6 +25,18 @@ Instructions:
 	e. get_highest_grade(): Finds and prints the student(s) with the highest 
 	   grade.
 
+The output of the program once complete should be:
+
+{'Alice': 85, 'Bob': 92, 'Charlie': 78, 'Diana': 92}
+Alice's grade is 85
+All students and grades:
+Alice: 90
+Bob: 92
+Charlie: 78
+Diana: 92
+Average grade: 88.00
+Highest grade: 92
+Student(s) with the highest grade: Bob, Diana
 
 """
 
