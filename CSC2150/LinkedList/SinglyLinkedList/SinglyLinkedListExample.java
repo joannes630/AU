@@ -19,13 +19,42 @@ class SinglyLinkedList {
         head = null;
     }
 
+    public boolean isEmpty() {
+        if (head == null)
+            return true;
+        else
+            return false;
+    }
+    
+     public int getSize() {
+        int size = 0;
+        Node current = head;
+
+        while (current != null) {
+            size++; 
+            current = current.next; 
+        }
+
+        return size;       
+     }
+
+    // Display all the elements in the linked list
+    public void printList() {
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " -> ");
+            current = current.next;
+        }
+        System.out.println("null");
+    }
+    
     // Add a new node at the beginning of the list
     public void prepend(int data) {
         Node newNode = new Node(data);
         newNode.next = head; // The new node points to the current head
         head = newNode;      // Update the head to the new node
     }
-
+    
     // Add a new node at the end of the list
     public void append(int data) {
 		/* Scenarios:
@@ -64,16 +93,6 @@ class SinglyLinkedList {
         return false;  // Value not found
     }
 
-    // Display all the elements in the linked list
-    public void printList() {
-        Node current = head;
-        while (current != null) {
-            System.out.print(current.data + " -> ");
-            current = current.next;
-        }
-        System.out.println("null");
-    }
-    
     // Delete the first node with the specified value
     public void delete(int data) {
 		/* Scenarios:
@@ -110,6 +129,8 @@ class SinglyLinkedList {
 public class SinglyLinkedListExample {
     public static void main(String[] args) {
         SinglyLinkedList list = new SinglyLinkedList();
+        System.out.println("Is the linked list empty? " + list.isEmpty());
+        System.out.println("The size is " + list.getSize());
 
         // Add elements to the list
         list.prepend(10);
@@ -121,6 +142,8 @@ public class SinglyLinkedListExample {
 
         // Print the linked list
         list.printList(); // Output: 30->20->10->40->50->60->null
+        System.out.println("Is the linked list empty? " + list.isEmpty());
+        System.out.println("The size is " + list.getSize());
         
         // Search for a node
         System.out.println("Is 30 in the linked list? " + list.search(30));
