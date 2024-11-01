@@ -76,6 +76,11 @@ def calculate_average():
 def get_highest_grade(): 
     pass
     
+# 2f: Function to find and return all A Students (with grades of 90 or more) 
+#     names in a list to the caller.
+def get_A_students():
+    pass
+
 # Driver
 add_grade("Alice", 85)
 add_grade("Bob", 92)
@@ -99,3 +104,8 @@ calculate_average()
 
 # Find and print the highest grade
 get_highest_grade()
+
+# Find and return a list of A students
+get_A_students()
+
+    
