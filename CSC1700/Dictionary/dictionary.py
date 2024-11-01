@@ -1,43 +1,16 @@
-'''
-Dictionary:
-    - To create an empty dictionary
-        dict = {}
-    - To create and initialize a dictionary
-        dict = {
-            "Chris": 5551111,
-            "Katie": 5552222,
-            "John":  5553333
-        }
-    - To add key/value pairs in the dictionary (Assuming key is a String and value is an integer)
-        dict["Bob"] = 2244446666
-    - To check if a key is in a dictionary
-        if "Bob" in dict:
-    - To check if a key is NOT in a dictionary
-        if "Bob" not in dict:
-    - To retrieve a value using a key
-        dict["Bob"]         --> Could crash if "Bob" is not a key
-        or
-        dict.get("Bob")     --> Would not crash if "Bob" is not a key
-    - To retrieve and delete an item in a dictionary
-        phonenumber = dict.pop("Bob")
-    - To retrieve and delete the last item in a dictionary
-        phonenumber = dict.popitem()
-    - To delete a key/value pair (item)
-        del dict["Bob"]
-    - Iterating a dictionary 
-        for name in dict:
-            print(name, dict[name])
-    - Iterating a dictionary using keys
-        for name in dict.keys():
-            print(name, dict[name])
-    - Iterating a dictionary using values
-        for phonenumber in dict.values():
-            print(phonenumber)
-    - Iterating a dictionary using key/value pairs
-        for name, phonenumber in dict.items():
-            print(name, phonenumber)
-    - Mixing data types in a dictionary
-'''
+"""
+    Dictionary methods:
+        dict[key] = value   --> add/update a key/value pair
+        dict[key]           --> to retrieve a value in a dictionary
+        dict.get(key)       --> to retrieve a value in a dictionary (returns None if key not found)
+        dict.pop(key)       --> to retrieve and delete an item in a dictionary
+        dict.popitem()      --> to retrieve and delete the last item in a dictionary
+        dict.keys()         --> retrieves a list of keys
+        dict.value()        --> retrieves a list of values
+        dict.items()        --> retrieves a list of key/value pairs
+
+    del dict[key]       --> deletes an item in a dictionary
+"""
 
 # dict = {
 #     "Chris": 5551111,
