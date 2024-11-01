@@ -112,20 +112,29 @@ public class SinglyLinkedListExample {
         SinglyLinkedList list = new SinglyLinkedList();
 
         // Add elements to the list
-        list.append(10);
-        list.append(20);
-        list.append(30);
-        list.prepend(5);
+        list.prepend(10);
+        list.prepend(20);
+        list.prepend(30);
+        list.append(40);
+        list.append(50);
+        list.append(60);
 
         // Print the linked list
-        list.printList(); // Output: 5 -> 10 -> 20 -> 30 -> null
+        list.printList(); // Output: 30->20->10->40->50->60->null
+        
+        // Search for a node
+        System.out.println("Is 30 in the linked list? " + list.search(30));
 
-        // Delete an element
-        list.delete(20);
+        // Delete an element at the head
+        list.delete(30);
+        list.printList(); // Output: 20->10->40->50->60->null
 
-        // Search for an item in the linked list
-        System.out.println("Is the value 30 in the list? " + list.search(30));
+        // Delete an element in the middle
+        list.delete(40);
+        list.printList(); // Output: 20->10->50->60->null
 
-        list.printList(); // Output: 5 -> 10 -> 30 -> null
+        // Delete an element at the tail
+        list.delete(60);
+        list.printList(); // Output: 20->10->50->null
     }
 }
