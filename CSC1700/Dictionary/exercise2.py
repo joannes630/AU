@@ -39,47 +39,71 @@ Is 'grape' in stock? False
 
 """
 
+"""
+    Dictionary methods:
+        dict[key] = value   --> add/update a key/value pair
+        dict[key]           --> to retrieve a value in a dictionary
+        dict.get(key)       --> to retrieve a value in a dictionary (returns None if key not found)
+        dict.pop(key)       --> to retrieve and delete an item in a dictionary
+        dict.popitem()      --> to retrieve and delete the last item in a dictionary
+        dict.keys()         --> retrieves a list of keys
+        dict.value()        --> retrieves a list of values
+        dict.items()        --> retrieves a list of key/value pairs
+
+    del dict[key]       --> deletes an item in a dictionary
+"""
+
 # 1: Create the dictionary to store inventory items
 
 # 2a: Write a function to add an item. 
 #         If the item exists, it will overwrite it.
 def add_item(item_name, price, quantity):
+    pass
 
 # 2b: Write a function to add to the quantity of an existing item
 def add_quantity(item_name, quantity):
+    pass
 
 # 2c: Write a function to update the price of an existing item
 def update_price(item_name, new_price):
+    pass
 
 # 2d: Write a function to retrieve details of a specific item
 def get_item_details(item_name):
+    pass
 
 # 2e: Write a function to print all items in the inventory
 def print_inventory():
+    pass
 
 # 2f: Write a function to calculate the total value of the inventory
 def calculate_total_value():
+    pass
 
 # 2g: Write a function to check if an item is in stock
 def is_in_stock(item_name):
+    pass
     
 # Driver
-add_item("Laptop", 1200, 5)
-add_item("Mouse", 25, 50)
-add_item("Keyboard", 70, 20)
-
-# Get details of an item
-print(get_item_details("Mouse"))
-
-# Update the quantity of an item
-update_quantity("Laptop", 3)
-
-# Print all items in the inventory
+add_item("apple", 5, 50)
+add_item("banana", 1, 100)
+add_item("orange", 3, 70)
 print_inventory()
+print()
 
-# Check if an item is in stock
-print(is_in_stock("Laptop"))
-print(is_in_stock("Monitor"))
+print("Adding 20 apples to inventory")
+add_quantity("apple", 20)
+print("Changing the price of bananas to $2")
+update_price("banana", 2)
+print_inventory()
+print()
 
-# Calculate the total value of the inventory
+get_item_details("apple")
+get_item_details("banana")
+print()
+
 calculate_total_value()
+print()
+
+print("Is 'banana' in stock?", is_in_stock("banana"))
+print("Is 'grape' in stock?", is_in_stock("grape"))

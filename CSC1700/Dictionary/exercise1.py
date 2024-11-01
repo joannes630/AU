@@ -10,11 +10,10 @@ Write a Python program that performs the following tasks:
 1. Create an empty dictionary called `grades` to store student names (as keys) 
    and their grades (as values). Make it global.
 2. Add new student grades to the dictionary.
-3. Update existing student grades.
-4. Retrieve a student's grade by their name.
-5. Print all students and their grades.
-6. Calculate and print the average grade.
-7. Find and print the student(s) with the highest grade.
+3. Retrieve a student's grade by their name.
+4. Print all students and their grades.
+5. Calculate and print the average grade.
+6. Find and print the student(s) with the highest grade.
 
 Instructions:
 1. Create an empty dictionary (global) called grades.
@@ -26,20 +25,46 @@ Instructions:
 	e. get_highest_grade(): Finds and prints the student(s) with the highest 
 	   grade.
 
+
 """
-# Step 1: Create the dictionary to store student grades
 
-# Step 2, 3: Function to add or update a student's grade
+"""
+    Dictionary methods:
+        dict[key] = value   --> add/update a key/value pair
+        dict[key]           --> to retrieve a value in a dictionary
+        dict.get(key)       --> to retrieve a value in a dictionary (returns None if key not found)
+        dict.pop(key)       --> to retrieve and delete an item in a dictionary
+        dict.popitem()      --> to retrieve and delete the last item in a dictionary
+        dict.keys()         --> retrieves a list of keys
+        dict.value()        --> retrieves a list of values
+        dict.items()        --> retrieves a list of key/value pairs
 
-# Step 4: Function to retrieve a student's grade
+    del dict[key]       --> deletes an item in a dictionary
+"""
 
-# Step 5: Function to print all student grades
+# 1: Create the dictionary to store student grades
 
-# Step 6: Function to calculate the average grade
+# 2a: Function to add or update a student's grade
+def add_grade(student, grade):
+    pass
 
-# Step 7: Function to find and print the student(s) with the highest grade
-
-# Example usage
+# 2b: Function to retrieve a student's grade
+def get_grade(student):
+    pass
+    
+# 2c: Function to print all student grades
+def print_grades(): 
+    pass
+    
+# 2d: Function to calculate and print the average grade
+def calculate_average(): 
+    pass
+    
+# 2e: Function to find and print the student(s) with the highest grade
+def get_highest_grade(): 
+    pass
+    
+# Driver
 add_grade("Alice", 85)
 add_grade("Bob", 92)
 add_grade("Charlie", 78)
