@@ -124,6 +124,23 @@ class SinglyLinkedList {
             current.next = current.next.next;
         }
     }
+
+    /* 
+     * Write a method, `countIntances`, this method accepts one argument which
+     * is an integer. It will count the number of instances this number
+     * appears in the linked list an return the count.
+     * */
+    
+    /* 
+     * Write a method, `countDuplicates`, that will
+     * count the number of nodes that contain a string value duplicated in 
+     * the list. For example, if the strings A, C, D, E, C, C, E appeared in 
+     * the list, then 3 would be returned, if the strings C, A, E, F, A 
+     * appeared in the list nodes, then 1 would be returned, if strings, 
+     * C, A, E, F appeared in the list nodes, then 0 would be returned, etc. 
+     * Consider using another data structure to help count.
+     * */
+    
 }
 
 public class SinglyLinkedListExample {
