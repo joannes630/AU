@@ -53,37 +53,64 @@ Is 'grape' in stock? False
     del dict[key]       --> deletes an item in a dictionary
 """
 
-# 1: Create the dictionary to store inventory items
+# Initialize an empty dictionary for the inventory
+inventory = {}
 
-# 2a: Write a function to add an item. 
-#         If the item exists, it will overwrite it.
+# Function to add an item. If if the item exists, it will overwrite it.
 def add_item(item_name, price, quantity):
-    pass
+    if item_name in inventory:
+        print(f"Item {item_name} will be overwritten.")
+    inventory[item_name] = price, quantity
 
-# 2b: Write a function to add to the quantity of an existing item
+# Function to add to the quantity of an existing item
 def add_quantity(item_name, quantity):
-    pass
+    if item_name in inventory:
+        price, current_quantity = inventory[item_name]
+        inventory[item_name] = (price, current_quantity + quantity)
+    else:
+        print(f"Item '{item_name}' does not exist in the inventory.")
 
-# 2c: Write a function to update the price of an existing item
+# Function to update the price of an existing item
 def update_price(item_name, new_price):
-    pass
+    if item_name in inventory:
+        price, quantity = inventory[item_name]
+        inventory[item_name] = (new_price, quantity)
+    else:
+        print(f"Item '{item_name}' does not exist in the inventory.")
 
-# 2d: Write a function to retrieve details of a specific item
+# Function to retrieve details of a specific item
 def get_item_details(item_name):
-    pass
+    if item_name in inventory:
+        price, quantity = inventory[item_name]
+        print(f"Item: {item_name}, Price: {price}, Quantity: {quantity}")
+    else:
+        print(f"Item '{item_name}' is not found in the inventory.")
 
-# 2e: Write a function to print all items in the inventory
+# Function to print all items in the inventory
 def print_inventory():
-    pass
+    print("Inventory:")
+    for item_name, (price, quantity) in inventory.items():
+        print(f"Item: {item_name}, Price: {price}, Quantity: {quantity}")
 
-# 2f: Write a function to calculate the total value of the inventory
+# Function to calculate the total value of the inventory
 def calculate_total_value():
-    pass
+    total_value = 0
+    for item_name, (price, quantity) in inventory.items():
+        total_value += price * quantity
+    print(f"Total Inventory Value: {total_value}")
 
-# 2g: Write a function to check if an item is in stock
+# Function to check if an item is in stock
 def is_in_stock(item_name):
-    pass
-    
+    if item_name not in inventory:
+        quantity = 0
+    else:
+        price, quantity = inventory[item_name]
+        
+    if quantity == 0:
+        return False
+    else:
+        return True
+
 # Driver
 add_item("apple", 5, 50)
 add_item("banana", 1, 100)
