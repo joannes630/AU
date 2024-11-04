@@ -19,7 +19,8 @@ parameter is a 2D list of integers and the second parameter is an integer.
 The function should return true if the 2nd parameter is found in the 
 1st parameter and false otherwise.  
 You do not need to write a call to the function. 
-Simply write the complete function without using the `in` operator.
+Simply write the complete function without using the `in` operator in an if
+statement (You can use `in` operator in a for loop).
 """
 
 """
