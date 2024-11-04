@@ -30,12 +30,4 @@ parameter. You do not need to write a call to the function.
 Simply write the complete function.
 """
 
-"""
-4. Write a function called `findMaxValue` that accepts a dictionary as its 
-parameter. Each key in the dictionary is a string representing a category, 
-and each value is a list of positive integers. The function should return the 
-maximum integer found across all lists in the dictionary. You are not allowed 
-to use the built-in `max` function.
-"""
-
 
