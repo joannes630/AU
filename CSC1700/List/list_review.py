@@ -23,6 +23,15 @@ Simply write the complete function without using the `in` operator in an if
 statement (You can use `in` operator in a for loop).
 """
 
+def findNum(list2D, x):
+    for i in range(len(list2D)):
+        for j in range(len(list2D[i])):
+            if x == list2D[i][j]:
+                return True
+    return False
+    
+    
+
 """
 3. Write a function called `countLarger` that accepts two arguments.  The first 
 parameter is a list of integers and the second parameter is an integer.  
@@ -30,5 +39,16 @@ The function should return the count of numbers that is larger than the second
 parameter. You do not need to write a call to the function. 
 Simply write the complete function.
 """
+
+def countLarger(list, x):
+    count = 0
+    for i in range(len(list)):
+        if list[i] > x:
+            count += 1
+            
+    return count
+    
+list = [1, 2, 3, 4, 5]
+print(countLarger(list, 2))
 
 

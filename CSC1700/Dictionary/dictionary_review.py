@@ -19,3 +19,18 @@ and each value is a list of positive integers. The function should return the
 maximum integer found across all lists in the dictionary. You are not allowed 
 to use the built-in `max` function.
 """
+
+dict = {"Joe": [1, 2, 3], "Kevin": [10, 7, 8]}
+
+def findMaxValue(dict):
+    max = 0
+    for key in dict:
+        list = dict[key]
+        for n in list:
+            if n > max:
+                max = n
+    return max
+    
+print(findMaxValue(dict))
+
+            
