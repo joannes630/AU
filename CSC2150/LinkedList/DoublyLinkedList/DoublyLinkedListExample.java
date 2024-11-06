@@ -21,6 +21,35 @@ class DoublyLinkedList {
         head = null;
     }
 
+    public boolean isEmpty() {
+        if (head == null)
+            return true;
+        else
+            return false;
+    }
+
+    public int getSize() {
+        int size = 0;
+        Node current = head;
+
+        while (current != null) {
+            size++;
+            current = current.next;
+        }
+
+        return size;
+    }
+
+    // Display all the elements in the linked list
+    public void printList() {
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " <-> ");
+            current = current.next;
+        }
+        System.out.println("null");
+    }
+
     // Add a new node at the beginning of the list
     public void prepend(int data) {
         Node newNode = new Node(data);
@@ -58,8 +87,30 @@ class DoublyLinkedList {
         newNode.prev = current;
     }
 
+    // Method to search for a value in the list
+    public boolean search(int data) {
+        Node current = head;
+
+        // Traverse through the list
+        while (current != null) {
+            if (current.data == data) {
+                return true;  // Value found
+            }
+            current = current.next;
+        }
+
+        return false;  // Value not found
+    }
+
     // Delete the first node with the specified value
     public void delete(int data) {
+        /* Scenarios:
+         * 1. List is empty
+         * 2. The node to delete is at the head
+         * 3. The node to delete is in the middle or end
+         * 4. The node to delete is not in the list
+         */
+
         // If the list is empty, return
         if (head == null) {
             return;
@@ -89,31 +140,6 @@ class DoublyLinkedList {
                 current.prev.next = current.next;
             }
         }
-    }
-
-    // Method to search for a value in the list
-    public boolean search(int data) {
-        Node current = head;
-
-        // Traverse through the list
-        while (current != null) {
-            if (current.data == data) {
-                return true;  // Value found
-            }
-            current = current.next;
-        }
-
-        return false;  // Value not found
-    }
-
-    // Display all the elements in the linked list
-    public void printList() {
-        Node current = head;
-        while (current != null) {
-            System.out.print(current.data + " <-> ");
-            current = current.next;
-        }
-        System.out.println("null");
     }
 }
 
