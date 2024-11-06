@@ -2,16 +2,16 @@
 
 class Car:
     def __init__(self):
-        self.__speed = 0
+        self.speed = 0
 
     def accelerate(self):
-        self.__speed += 1
+        self.speed += 1
 
     def deccelerate(self):
-        self.__speed -= 1
+        self.speed -= 1
 
     def get_speed(self):
-        return self.__speed
+        return self.speed
 
 def main():
     car = Car();

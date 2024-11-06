@@ -11,9 +11,9 @@ def withdraw(balance, amount):
 def main():
     balance = 0
     print(f"Your initial balance is ${balance:,.2f}.")
-    balance = deposit(balance, 100)
+    balance = deposit(balance, 50)
     print(f"Your account balance after deposit is ${balance:,.2f}.")
-    balance = withdraw(balance, 25)
+    balance = withdraw(balance, 20)
     print(f"Your account balance after withdrawal is ${balance:,.2f}.")
 
 main()
