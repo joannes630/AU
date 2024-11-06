@@ -17,5 +17,3 @@ def main():
     print(f"Your account balance after withdrawal is ${balance:,.2f}.")
 
 main()
-
-
