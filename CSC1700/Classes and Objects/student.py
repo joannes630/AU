@@ -13,6 +13,10 @@ class Student:
         return total / len(self.grades)
 
 # Example usage
-student1 = Student("Alice", 20, [88, 92, 79, 85])
-average = student1.calculate_average()
-print(f"{student1.name}'s average grade is {average}")
+student1 = Student("Alice", 18, [85, 92, 78])
+student2 = Student("Bob", 19, [95, 88])
+student3 = Student("Charlie", 20, [])  # Empty grades list
+
+print(f"{student1.name}'s average: {student1.calculate_average()}")  # Output 85.0
+print(f"{student2.name}'s average: {student2.calculate_average()}")  # Output 91.5
+print(f"{student3.name}'s average: {student3.calculate_average()}")  # Output: 0.0 (no grades)
