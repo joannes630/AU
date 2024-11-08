@@ -14,7 +14,7 @@ class BankAccount:
         return self.balance
 
 def main():
-    johnAccount = BankAccount(0)
+    johnAccount = BankAccount(10)
     print(johnAccount.get_balance())
     johnAccount.deposit(50)
     print(johnAccount.get_balance())
