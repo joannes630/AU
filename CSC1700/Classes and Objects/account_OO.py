@@ -14,11 +14,11 @@ class BankAccount:
         return self.balance
 
 def main():
-    johnAccount = BankAccount(10)
-    print(johnAccount.get_balance())
-    johnAccount.deposit(50)
-    print(johnAccount.get_balance())
-    johnAccount.withdraw(20)
-    print(johnAccount.get_balance())
+    account1 = BankAccount(10)
+    print(account1.get_balance())
+    account1.deposit(50)
+    print(account1.get_balance())
+    account1.withdraw(20)
+    print(account1.get_balance())
 
 main()
