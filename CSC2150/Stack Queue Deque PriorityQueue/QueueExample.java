@@ -23,8 +23,10 @@ public class QueueExample {
 
         // Dequeue the front element
         System.out.println("Removed element: " + queue.remove()); // Output: 20
+        System.out.println("Removed element: " + queue.remove()); // Output: 10
+        System.out.println("Removed element: " + queue.remove()); // Output: 30
 
         // Check if the queue is empty
-        System.out.println("Is queue empty? " + queue.isEmpty()); // Output: false
+        System.out.println("Is queue empty? " + queue.isEmpty()); // Output: true
     }
 }
