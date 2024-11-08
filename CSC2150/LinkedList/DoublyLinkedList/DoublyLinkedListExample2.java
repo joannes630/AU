@@ -24,7 +24,10 @@ class DoublyLinkedList {
     }
 
     public boolean isEmpty() {
-        return head == null;
+        if (head == null)
+            return true;
+        else
+            return false;
     }
 
     public int getSize() {

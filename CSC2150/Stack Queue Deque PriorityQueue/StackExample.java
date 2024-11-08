@@ -23,6 +23,8 @@ public class StackExample {
 
         // Pop the top element
         System.out.println("Popped element: " + stack.pop()); // Output: Cherry
+        System.out.println("Popped element: " + stack.pop()); // Output: Banana
+        System.out.println("Popped element: " + stack.pop()); // Output: Apple
 
         // Search for an element
         System.out.println("Position of Banana: " + stack.search("Banana")); // Output: 1
