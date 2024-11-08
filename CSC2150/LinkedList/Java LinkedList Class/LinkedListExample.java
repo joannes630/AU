@@ -2,10 +2,8 @@ import java.util.LinkedList;
 
 /*
     LinkedList popular methods:
-        add(element)        --> inserts an element at the end
         addFirst(element)   --> inserts an element at the beginning
         addLast(element)    --> inserts an element at the end
-        remove()            --> retrieves and removes the first element
         removeFirst()       --> retrieves and removes the first element
         removeLast()        --> retrieves and removes the last element
         get(index)          --> retrieves the element at the specified index
@@ -18,8 +16,8 @@ public class LinkedListExample {
         LinkedList<String> list = new LinkedList<>();
 
         // Adding elements
-        list.add("Apple");
-        list.add("Banana");
+        list.addLast("Apple");
+        list.addLast("Banana");
         list.addFirst("Grapes");
         list.addLast("Orange");
 
