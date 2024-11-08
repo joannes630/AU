@@ -19,10 +19,10 @@ public class QueueExample {
         queue.add(30);
 
         // Peek at the front element
-        System.out.println("Front element: " + queue.peek()); // Output: 10
+        System.out.println("Front element: " + queue.peek()); // Output: 20
 
         // Dequeue the front element
-        System.out.println("Removed element: " + queue.remove()); // Output: 10
+        System.out.println("Removed element: " + queue.remove()); // Output: 20
 
         // Check if the queue is empty
         System.out.println("Is queue empty? " + queue.isEmpty()); // Output: false
