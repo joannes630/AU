@@ -1,6 +1,9 @@
 # This is object oriented programming
 
 class BankAccount:
+    # data attribute:
+    #   balance
+    
     def __init__(self, bal):
         self.balance = bal
 
