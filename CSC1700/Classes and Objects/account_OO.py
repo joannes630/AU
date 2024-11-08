@@ -15,9 +15,7 @@ class BankAccount:
 
 def main():
     account1 = BankAccount(10)
-    print(account1.get_balance())
     account1.deposit(50)
-    print(account1.get_balance())
     account1.withdraw(20)
     print(account1.get_balance())
 
