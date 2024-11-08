@@ -14,8 +14,8 @@ public class QueueExample {
         Queue<Integer> queue = new LinkedList<>();
 
         // Enqueue elements
-        queue.add(10);
         queue.add(20);
+        queue.add(10);
         queue.add(30);
 
         // Peek at the front element
