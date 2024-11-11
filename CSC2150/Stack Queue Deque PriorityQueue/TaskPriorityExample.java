@@ -38,6 +38,5 @@ public class TaskPriorityExample {
             System.out.println(taskQueue.poll()); // Removes and prints the highest priority task
         }
 
-        System.out.println(Integer.compare(1, 2));
     }
 }

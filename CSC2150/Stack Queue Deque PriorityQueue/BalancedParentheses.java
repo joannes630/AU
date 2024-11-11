@@ -21,7 +21,7 @@ public class BalancedParentheses {
                If c is ( or { or [, add to the stack
                Else
                     if empty, it's not balanced 
-                    Pop the stack, if c is ( and popped item is not ) (apply to other too), return false
+                    Pop the stack, if c is ) and popped item is not ( (apply to other too), return false
 
             If stack is not empty, its not balanced
         */
