@@ -16,6 +16,16 @@ import java.util.ArrayDeque;
 public class BalancedParentheses {
     public static boolean isBalanced(String str) {
         Deque<Character> stack = new ArrayDeque<>();
+        /* Algorithm:
+           Go in a loop of chars 
+               If c is ( or { or [, add to the stack
+               Else
+                    if empty, it's not balanced 
+                    Pop the stack, if c is ( and popped item is not ) (apply to other too), return false
+
+            If stack is not empty, its not balanced
+        */
+
 
         for (char c : str.toCharArray()) {
             if (c == '(' || c == '{' || c == '[') {
