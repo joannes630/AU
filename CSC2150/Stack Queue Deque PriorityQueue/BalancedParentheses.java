@@ -1,18 +1,19 @@
-import java.util.Stack;
+import java.util.Deque;
+import java.util.ArrayDeque;
 
 public class BalancedParentheses {
     public static boolean isBalanced(String str) {
-        Stack<Character> stack = new Stack<>();
+        Deque<Character> stack = new ArrayDeque<>();
 
         for (char c : str.toCharArray()) {
             if (c == '(' || c == '{' || c == '[') {
-                stack.push(c);
+                stack.addFirst(c);
             } else {
                 if (stack.isEmpty()) {
                     return false;
                 }
 
-                char topElement = stack.pop();
+                char topElement = stack.removeFirst();
                 if ((c == ')' && topElement != '(') ||
                     (c == '}' && topElement != '{') ||
                     (c == ']' && topElement != '[')) {
