@@ -1,6 +1,18 @@
 import java.util.Deque;
 import java.util.ArrayDeque;
 
+/*
+    Deque key methods:
+        addFirst(element)   --> adds an element to the head/top
+        addLast(element)    --> adds an element to the tail/bottom
+        pollFirst()         --> removes and returns the first element
+        pollLast()          --> removes and returns the last element
+        peekFirst()         --> Returns, but does not remove, the first element
+        peekLast()          --> Returns, but does not remove, the last element
+        size()              --> returns the number of elements in the deque
+        isEmpty()           --> returns true if the deque is empty
+ */
+
 public class BalancedParentheses {
     public static boolean isBalanced(String str) {
         Deque<Character> stack = new ArrayDeque<>();
