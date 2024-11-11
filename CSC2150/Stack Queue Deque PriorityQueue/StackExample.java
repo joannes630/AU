@@ -18,6 +18,7 @@ public class StackExample {
         stack.push("Banana");
         stack.push("Cherry");
 
+        System.out.println(stack);
         // Peek at the top element
         System.out.println("Top element: " + stack.peek()); // Output: Cherry
 
@@ -27,9 +28,9 @@ public class StackExample {
         System.out.println("Popped element: " + stack.pop()); // Output: Apple
 
         // Search for an element
-        System.out.println("Position of Banana: " + stack.search("Banana")); // Output: 1
+        System.out.println("Position of Banana: " + stack.search("Banana")); // Output: -1
 
         // Check if the stack is empty
-        System.out.println("Is stack empty? " + stack.empty()); // Output: false
+        System.out.println("Is stack empty? " + stack.empty()); // Output: true
     }
 }

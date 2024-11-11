@@ -10,27 +10,28 @@ import java.util.Stack;
         search()            --> returns the 1-based position of an element from the top, or -1 ir not found
  */
 
-public class StackExample {
+public class StackAsListExample {
     public static void main(String[] args) {
         List<String> stack = new Stack<>();
 
         // Push elements onto the stack
-        stack.push("Apple");
-        stack.push("Banana");
-        stack.push("Cherry");
+        stack.add("Apple");
+        stack.add("Banana");
+        stack.add("Cherry");
 
         // Peek at the top element
-        System.out.println("Top element: " + stack.peek()); // Output: Cherry
+        System.out.println(stack);
+        System.out.println("Top element: " + stack.get(stack.size() - 1)); // Output: Cherry
 
         // Pop the top element
-        System.out.println("Popped element: " + stack.pop()); // Output: Cherry
-        System.out.println("Popped element: " + stack.pop()); // Output: Banana
-        System.out.println("Popped element: " + stack.pop()); // Output: Apple
+        System.out.println("Popped element: " + stack.remove(stack.size() - 1)); // Output: Cherry
+        System.out.println("Popped element: " + stack.remove(stack.size() - 1)); // Output: Banana
+        System.out.println("Popped element: " + stack.remove(stack.size() - 1)); // Output: Apple
 
         // Search for an element
-        System.out.println("Position of Banana: " + stack.search("Banana")); // Output: 1
+        System.out.println("Position of Banana: " + stack.contains("Banana")); // Output: false
 
         // Check if the stack is empty
-        System.out.println("Is stack empty? " + stack.empty()); // Output: false
+        System.out.println("Is stack empty? " + stack.isEmpty()); // Output: true
     }
 }
