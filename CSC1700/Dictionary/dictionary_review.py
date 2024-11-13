@@ -6,7 +6,7 @@
         dict.pop(key)       --> to retrieve and delete an item in a dictionary
         dict.popitem()      --> to retrieve and delete the last item in a dictionary
         dict.keys()         --> retrieves a list of keys
-        dict.value()        --> retrieves a list of values
+        dict.values()       --> retrieves a list of values
         dict.items()        --> retrieves a list of key/value pairs
 
     del dict[key]       --> deletes an item in a dictionary
