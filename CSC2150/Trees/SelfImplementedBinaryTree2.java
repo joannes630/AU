@@ -1,13 +1,7 @@
 // Node class representing each node of the tree
 class Node {
-    int value;
-    Node left, right;
 
-    // Constructor
-    public Node(int value) {
-        this.value = value;
-        left = right = null;
-    }
+
 }
 
 // SelfImplementedBinaryTree2 class with basic tree operations
@@ -55,30 +49,23 @@ public class SelfImplementedBinaryTree2 {
 
     // Post-order traversal of the tree
     public void postOrderTraversal() {
-        postOrderRec(root);
+
     }
 
     // Recursive method for post-order traversal
     private void postOrderRec(Node root) {
-        if (root != null) {
-            postOrderRec(root.left);
-            postOrderRec(root.right);
-            System.out.print(root.value + " ");
-        }
+
+
     }
 
     // In-order traversal of the tree
     public void inOrderTraversal() {
-        inOrderRec(root);
+
     }
 
     // Recursive method for in-order traversal
     private void inOrderRec(Node root) {
-        if (root != null) {
-            inOrderRec(root.left);
-            System.out.print(root.value + " ");
-            inOrderRec(root.right);
-        }
+
     }
 
     // Main method to test the SelfImplementedBinaryTree2 class
