@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 
 /*
-    LinkedList popular methods:
+    LinkedList key methods:
         addFirst(element)   --> inserts an element at the beginning
         addLast(element)    --> inserts an element at the end
         removeFirst()       --> retrieves and removes the first element
