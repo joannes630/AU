@@ -5,8 +5,8 @@ import java.util.Deque;
     Deque key methods:
         addFirst(element)   --> adds an element to the head/top
         addLast(element)    --> adds an element to the tail/bottom
-        pollFirst()         --> removes and returns the first element
-        pollLast()          --> removes and returns the last element
+        removeFirst()         --> removes and returns the first element
+        removeLast()          --> removes and returns the last element
         peekFirst()         --> Returns, but does not remove, the first element
         peekLast()          --> Returns, but does not remove, the last element
         size()              --> returns the number of elements in the deque
@@ -21,8 +21,8 @@ public class DequeAsQueue {
         queue.addLast(2);
         queue.addLast(3);
 
-        System.out.println(queue.pollFirst()); //Output: 1
-        System.out.println(queue.pollFirst()); //Output: 2
-        System.out.println(queue.pollFirst()); //Output: 3
+        System.out.println(queue.removeFirst()); //Output: 1
+        System.out.println(queue.removeFirst()); //Output: 2
+        System.out.println(queue.removeFirst()); //Output: 3
     }
 }
