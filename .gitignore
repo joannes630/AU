@@ -1,4 +1,3 @@
-
 # Ignore all .class files
 *.class
 *.pyc
@@ -7,3 +6,6 @@
 
 # Ignore Programming Assignments folders
 PA/
+
+# Ignore specific files
+blackjack_gui.py
