@@ -9,3 +9,4 @@ PA/
 
 # Ignore specific files
 blackjack_gui.py
+*.keep.*
