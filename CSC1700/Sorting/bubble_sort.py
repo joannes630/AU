@@ -10,7 +10,7 @@ def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
 # Example usage
-data = [64, 34, 25, 12, 22, 11, 90]
+data = [64, 34, 90, 12, 22, 11, 1]
 print("Unsorted list:", data)
 bubble_sort(data)
 print("Sorted list:", data)  # Should print in this order: 11, 12, 22, 25, 34, 64, 90
