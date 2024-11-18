@@ -13,4 +13,5 @@ def bubble_sort(arr):
 data = [64, 34, 25, 12, 22, 11, 90]
 print("Unsorted list:", data)
 bubble_sort(data)
-print("Sorted list:", data)
+print("Sorted list:", data)  # Should print in this order: 11, 12, 22, 25, 34, 64, 90
+
