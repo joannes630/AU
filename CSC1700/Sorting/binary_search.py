@@ -16,7 +16,7 @@ def binary_search(arr, target):
 
 # Example Usage
 sorted_array = [1, 3, 5, 7, 9, 11, 13, 15]
-target = 3
+target = 13
 result = binary_search(sorted_array, target)
 
 if result != -1:
