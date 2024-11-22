@@ -1,12 +1,16 @@
-# Ignore all .class files
+# Ignore these files
 *.class
 *.pyc
 *.answer.py
 *.answer.java
+*.keep
 
 # Ignore Programming Assignments folders
 PA/
 
 # Ignore specific files
 blackjack_gui.py
+blackjack_gui3.py
+blackjack_gui_with_bet.py
+blackjack_logo.png
 *.keep.*

@@ -12,18 +12,16 @@ public class PriorityQueueExample {
 
         // Adding elements
         minHeap.add(30);
-        minHeap.add(10);
+        minHeap.add(12);
         minHeap.add(20);
-
-        // Displaying the elements based on priority
-        System.out.println("PriorityQueue: " + minHeap); // Output may be unordered but head will have the lowest element
+        minHeap.add(2);
+        minHeap.add(11);
+        minHeap.add(3);
+        minHeap.add(5);
+        minHeap.add(9);
 
         // Accessing the head element
-        System.out.println("Head element (peek): " + minHeap.peek()); // Output: 10 (smallest element)
-
-        // Removing elements based on priority
-        System.out.println("Removed element: " + minHeap.poll()); // Output: 10
-        System.out.println("PriorityQueue: " + minHeap); // Output may be unordered but head will have the lowest element
-        System.out.println("Removed element: " + minHeap.poll()); // Output: 20
+        System.out.println("Head element: " + minHeap.poll()); // Output: 10 (smallest element)
+        System.out.println("Head element: " + minHeap.peek());
     }
 }
