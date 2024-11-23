@@ -1,3 +1,8 @@
+"""
+Write a Python function `average_of_rows` that takes a 2D list
+as argument and returns a list containing the average of each row.
+
+"""
 
 def average_of_rows(matrix):
     result = []
