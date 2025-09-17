@@ -66,11 +66,12 @@ CSC 2810-01 M/W/F 10:40 AM - 11:45 AM
 |                        |                        |                        |                        |                        |                        |                        |
 |------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
 | 14                     | 15                     |                     16 | 17                     |                     18 | 19                     |                     20 |
-| Week 4                 | 3.5 if statement       |                        | HW 2                   |                        | Quiz 2                 |                        |
-|                        | 3.5.1 Dangling else    |                        | 3.6.6 Traditional sw   |                        | 3.4.1 for loop         |                        |
-|                        | 3.5.2 if-else-if       |                        | 3.3.1 while statement  |                        | 3.4.3 Nested for loops |                        |
-|                        | 3.5.4 Empty stmt       |                        | 3.3.2 do-while stmt    |                        |                        |                        |
-|                        | 3.6.1 Basic switch     |                        | 3.3.3 break, continue  |                        |                        |                        |
+| Week 4                 |                        |                        | 3.5.4 Empty stmt       |                        | HW 2 ; Quiz 2          |                        |
+|                        | 3.5 if statement       |                        | 3.6.1 Basic switch     |                        | 3.3.1 while statement  |                        |
+|                        | 3.5.1 Dangling else    |                        | 3.6.6 Traditional sw   |                        | 3.3.2 do-while stmt    |                        |
+|                        | 3.5.2 if-else-if       |                        |                        |                        | 3.3.3 break, continue  |                        |
+|                        |                        |                        |                        |                        | 3.4.1 for loop         |                        |
+|                        |                        |                        |                        |                        | 3.4.3 Nested for loops |                        |
 |------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
 | 21                     | 22                     |                     23 | 24                     |                     25 | 26                     |                     27 |
 | Week 5                 | Secure Coding          |                        |                        |                        |                        |                        |
