@@ -1,4 +1,7 @@
-# Write a Python program using a for loop to print the numbers from 1 through 10.
+# Write a Python program that uses a for loop to iterate and print through the items in a list of
+# fruits: "apple", "banana", "cherry", and "date".
 
-for i in range(1, 11):
-    print(i, end=" ")
+fruits = ["apple", "banana", "cherry", "date"]
+
+for fruit in fruits:
+    print(fruit, end=" ")
