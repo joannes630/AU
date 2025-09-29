@@ -11,7 +11,7 @@ public class SecureCommandExecution {
         String dir = scanner.nextLine();
 
         try {
-            // ✅ Use ProcessBuilder with arguments, not shell command strings
+            // Use ProcessBuilder with arguments, not shell command strings
             ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "dir", dir); // "cmd", "/c", "dir", dir for Windows
             pb.redirectErrorStream(true);
             Process process = pb.start();
