@@ -4,6 +4,7 @@
 *.answer.py
 *.answer.java
 *.keep
+*.class
 
 # Ignore Programming Assignments folders
 PA/
