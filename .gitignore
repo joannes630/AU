@@ -5,6 +5,8 @@
 *.answer.java
 *.keep
 *.class
+*.exe
+*.txt
 
 # Ignore Programming Assignments folders
 PA/

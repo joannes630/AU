@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class SecureDelete {
     // Example allow-list (only these files may be deleted)
-    private static final Set<String> ALLOWED_FILES = Set.of("temp1.txt", "temp2.log");
+    private static final Set<String> ALLOWED_FILES = Set.of("temp1.txt", "temp2.log", "myfile.txt");
 
     // Example app-level permission check (in real apps use RBAC/ACL)
     private static boolean hasDeletePermission(String username, String filename) {
