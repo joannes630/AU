@@ -1,10 +1,15 @@
-# Function to compute average score
-def compute_average(score1, score2, score3):
-    return (score1 + score2 + score3) / 3
+"""
+A teacher wants a program to quickly determine student performance based on 
+three test scores. The program should take each student’s name and three test 
+grades, compute the average of the scores, and then assign a letter 
+grade (A–F) according to standard grading rules. Finally, the program should 
+display the student’s name, average score (formatted to two decimal places), 
+and the corresponding letter grade. 
+"""
 
-# Function that calls compute_average
+# Function to compute average and print letter grade
 def print_grade(name, s1, s2, s3):
-    avg = compute_average(s1, s2, s3)  # function calling a function
+    avg = (s1 + s2 + s3) / 3
     if avg >= 90:
         grade = "A"
     elif avg >= 80:
