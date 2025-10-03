@@ -4,12 +4,12 @@ public class LoginDemoBad {
     private static void login(String username, String password) {
         try {
             // Simulate login (throw exception for invalid password)
-            if (!"secret123".equals(password)) {
+            if (!"admin".equals(username) || !"secret123".equals(password)) {
                 throw new IllegalArgumentException("Invalid password for user: " + username);
             }
 
             System.out.println("Login successful!");
-        } catch (Exception e) {
+        } catch (IllegalArgumentException e) {
             // BAD: leaking stack trace to the user
             e.printStackTrace();
         }
