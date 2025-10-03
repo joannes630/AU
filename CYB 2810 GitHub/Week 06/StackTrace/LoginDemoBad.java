@@ -1,5 +1,3 @@
-package StackTrace;
-
 import java.util.Scanner;
 
 public class LoginDemoBad {
