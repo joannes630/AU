@@ -1,11 +1,15 @@
-# Function to calculate total price of an item
-def calculate_total(price, quantity):
-    return price * quantity
+"""
+A school supply store needs a simple program to calculate and display the 
+total price of items purchased by a customer. Each item has a name, a 
+price, and a quantity. The program should calculate the total cost by multiplying 
+the price of an item by its quantity and then print a receipt-style line showing 
+the item name, unit price, quantity, and total cost. 
+"""
 
-# Function that calls calculate_total
+# Function to compute and print the total price
 def checkout(item, price, quantity):
-    total = calculate_total(price, quantity)  # function calls a function
-    print(f"{quantity} x {item} @ ${price:.2f} each = ${total:.2f}")
+    total = price * quantity
+    print(f"{quantity} x {item} ${price:.2f} each = ${total:.2f}")
 
 # Main program
 def main():
