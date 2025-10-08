@@ -1,8 +1,3 @@
-with open("philosophers.txt", "r") as file:
+with open("output.txt", "r") as file:
     line = file.readline()
-    print(line.strip())
-    line = file.readline()
-    print(line.strip())
-    line = file.readline()
-    print(line.strip())
-
+    print(line)
