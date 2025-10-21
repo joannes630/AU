@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
+#include <unistd.h>
 
 #include "common.h"
 #include "common_threads.h"
@@ -14,11 +15,6 @@ void *mythread(void *arg) {
 }
 
 int main(int argc, char *argv[]) {                    
-    if (argc != 1) {
-    	fprintf(stderr, "usage: main\n");
-    	exit(1);
-    }
-
     p = (int *) malloc(sizeof(int));
     *p = 102;  // set the value
 
