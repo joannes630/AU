@@ -1,0 +1,27 @@
+GLOBAL VARIABLE:
+    sem ← new semaphore
+
+FUNCTION worker(id):
+    wait(sem)
+    // simulate work for a resource that can only accomodate two threads
+    sleep(2 seconds)  
+    signal(sem)
+    RETURN
+
+MAIN PROGRAM:
+    id1 ← 1
+    id2 ← 2
+    id3 ← 3
+
+    initialize semaphore sem with value 2
+
+    CREATE THREAD t1 to run worker(id1)
+    CREATE THREAD t2 to run worker(id2)
+    CREATE THREAD t3 to run worker(id3)
+
+    WAIT for t1 to finish
+    WAIT for t2 to finish
+    WAIT for t3 to finish
+
+    destroy semaphore sem
+    EXIT PROGRAM
