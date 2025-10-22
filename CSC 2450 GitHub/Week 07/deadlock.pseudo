@@ -1,0 +1,34 @@
+GLOBAL VARIABLES:
+    lock1 ← new mutex
+    lock2 ← new mutex
+
+FUNCTION thread_func1():
+    acquire(lock1)
+    sleep(1 second)
+    acquire(lock2)
+    release(lock2)
+    release(lock1)
+    RETURN
+
+FUNCTION thread_func2():
+    acquire(lock2)
+    sleep(1 second)
+    acquire(lock1)
+    release(lock1)
+    release(lock2)
+    RETURN
+
+MAIN PROGRAM:
+    initialize(lock1)
+    initialize(lock2)
+
+    CREATE THREAD t1 to run thread_func1()
+    CREATE THREAD t2 to run thread_func2()
+
+    WAIT for t1 to finish
+    WAIT for t2 to finish
+
+    destroy(lock1)
+    destroy(lock2)
+
+    EXIT PROGRAM
