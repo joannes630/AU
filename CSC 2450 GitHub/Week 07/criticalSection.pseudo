@@ -1,0 +1,23 @@
+GLOBAL VARIABLES:
+    counter ← 0 
+    lock ← new mutex
+    max ← 1,000,000
+
+FUNCTION mythread(argument):
+    FOR i ← 1 TO max:
+        counter ← counter + 1
+    END FOR
+    RETURN
+
+MAIN PROGRAM:
+    DECLARE p1, p2 as threads
+    initialize(lock)
+
+    CREATE THREAD p1 to run mythread("A")
+    CREATE THREAD p2 to run mythread("B")
+
+    WAIT for p1 to finish
+    WAIT for p2 to finish
+
+    destroy(lock)
+    EXIT PROGRAM
