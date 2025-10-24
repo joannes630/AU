@@ -9,7 +9,7 @@
 # Prompt the user for input
 read -p "Enter your message: " message
 
-# Convert the message to lowercase for uniformity
+# Convert the message to lowercase
 message=$(echo "$message" | tr 'A-Z' 'a-z')
 
 # Use tr to perform the Atbash substitution
