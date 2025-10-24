@@ -1,7 +1,7 @@
 #!/bin/bash
 # ==========================================================
 # Script: atbash.sh
-# Purpose: Encode (or decode) a message using the Atbash cipher
+# Purpose: Encode a message using the Atbash cipher
 # Author: CYB 2810 Student
 # Date: October 2025
 # ==========================================================
