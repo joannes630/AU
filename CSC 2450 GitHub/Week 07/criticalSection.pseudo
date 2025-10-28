@@ -1,11 +1,11 @@
 GLOBAL VARIABLES:
-    counter ← 0 
-    lock ← new mutex
-    max ← 1,000,000
+    counter = 0 
+    lock = new mutex
+    max = 1,000,000
 
 FUNCTION mythread(argument):
-    FOR i ← 1 TO max:
-        counter ← counter + 1
+    FOR i = 1 TO max:
+        counter = counter + 1
     END FOR
     RETURN
 

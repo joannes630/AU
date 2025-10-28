@@ -1,6 +1,6 @@
 GLOBAL VARIABLES:
-    lock1 ← new mutex
-    lock2 ← new mutex
+    lock1 = new mutex
+    lock2 = new mutex
 
 FUNCTION thread_func1():
     acquire(lock1)

@@ -1,5 +1,5 @@
 GLOBAL VARIABLE:
-    sem ← new semaphore
+    sem = new semaphore
 
 FUNCTION worker(id):
     wait(sem)
