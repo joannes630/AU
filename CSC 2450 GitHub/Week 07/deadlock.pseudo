@@ -1,19 +1,23 @@
 GLOBAL VARIABLES:
+    x = 0
+    y = 0
     lock1 = new mutex
     lock2 = new mutex
 
 FUNCTION thread_func1():
     acquire(lock1)
-    sleep(1 second)
+    x += 1
     acquire(lock2)
+    y += 1
     release(lock2)
     release(lock1)
     RETURN
 
 FUNCTION thread_func2():
     acquire(lock2)
-    sleep(1 second)
+    y += 1
     acquire(lock1)
+    x += 1
     release(lock1)
     release(lock2)
     RETURN
