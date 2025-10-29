@@ -8,8 +8,6 @@ public class CaesarCipherEncode {
         for (char ch : text.toCharArray()) {
             if (ch >= 'a' && ch <= 'z') {
                 int offset = (ch - 'a' + shift) % 26;
-                if (offset < 0) 
-                    offset += 26;
                 char cipher = (char) ('a' + offset);
                 result.append(cipher);
             } else {
