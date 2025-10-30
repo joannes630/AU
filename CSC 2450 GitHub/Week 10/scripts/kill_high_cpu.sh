@@ -1,7 +1,7 @@
 #!/bin/bash
-# Kill any process using 3% or more CPU
+# Kill any process using 90% or more CPU
 
-THRESHOLD=3
+THRESHOLD=90
 
 # Get list of PID and CPU usage (excluding header)
 ps -eo pid,pcpu,comm --no-headers | while read pid cpu cmd; do
