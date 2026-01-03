@@ -11,6 +11,7 @@ CaesarCipherDecode.java
 
 # Ignore Programming Assignments folders
 PA/
+Backup/
 
 # Ignore specific files
 blackjack_gui.py
