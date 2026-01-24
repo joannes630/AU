@@ -34,8 +34,8 @@
 |                        |                        |                        |                        |                        |                        |                        |
 |------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
 | 25                     | 26                     |                     27 | 28                     |                     29 | 30                     |                     31 |
-| Week 3                 | Conditional operators  |                        |                        |                        | Logical operators      |                        |
-|                        | `Quiz 1`               |                        |                        |                        | Numeric ranges         |                        |
+| Week 3                 | Conditional operators  |                        | Logical operators      |                        |                        |                        |
+|                        | `Quiz 1`               |                        | Numeric ranges         |                        |                        |                        |
 |                        |                        |                        |                        |                        |                        |                        |
 |                        |                        |                        |                        |                        |                        |                        |
 |                        |                        |                        |                        |                        |                        |                        |
@@ -46,8 +46,8 @@
 | Sunday               - | Monday               - | Tuesday              - | Wednesday            - | Thursday             - | Friday               - | Saturday             - |
 |------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
 | 1                      | 2                      |                      3 | 4                      |                      5 | 6                      |                      7 |
-| Week 4                 | Operator precedence    |                        | `HW 2`                 |                        | `Quiz 2`               |                        |
-|                        |                        |                        | Nested decision        |                        | for loop               |                        |
+| Week 4                 | Comparison             |                        | `HW 2`                 |                        | `Quiz 2`               |                        |
+|                        | Operator precedence    |                        | Nested decision        |                        | for loop               |                        |
 |                        |                        |                        | if-elif-else           |                        | memory mapping         |                        |
 |                        |                        |                        | Chained comparison     |                        | Short circuit eval     |                        |
 |                        |                        |                        | Augmented assignment   |                        |                        |                        |
