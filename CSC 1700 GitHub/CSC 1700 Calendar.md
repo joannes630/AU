@@ -50,7 +50,7 @@
 |                        | Operator precedence    |                        | Augmented assignment   |                        | for loop               |                        |
 |                        | Logical operators      |                        |                        |                        | memory mapping         |                        |
 |                        | Numeric ranges         |                        |                        |                        | Short circuit eval     |                        |
-|                        |                        |                        |                        |                        |                        |                        |
+|                        | Chaining comparisons   |                        |                        |                        |                        |                        |
 |------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
 | 8                      | 9                      |                     10 | 11                     |                     12 | 13                     |                     14 |
 | Week 5                 | while loop             |                        | Sentinel control       |                        | break / continue       |                        |
