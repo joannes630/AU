@@ -48,9 +48,9 @@
 | 1                      | 2                      |                      3 | 4                      |                      5 | 6                      |                      7 |
 | Week 4                 | Comparison             |                        | `HW 2`                 |                        | `Quiz 2`               |                        |
 |                        | Operator precedence    |                        | Augmented assignment   |                        | for loop               |                        |
-|                        | Logical operators      |                        |                        |                        | memory mapping         |                        |
+|                        | Logical operators      |                        | Chaining comparisons   |                        | memory mapping         |                        |
 |                        | Numeric ranges         |                        |                        |                        | Short circuit eval     |                        |
-|                        | Chaining comparisons   |                        |                        |                        |                        |                        |
+|                        |                        |                        |                        |                        |                        |                        |
 |------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
 | 8                      | 9                      |                     10 | 11                     |                     12 | 13                     |                     14 |
 | Week 5                 | while loop             |                        | Sentinel control       |                        | break / continue       |                        |
