@@ -47,21 +47,21 @@
 |------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
 | 1                      | 2                      |                      3 | 4                      |                      5 | 6                      |                      7 |
 | Week 4                 | Comparison             |                        | Chaining comparisons   |                        | `Quiz 2`               |                        |
-|                        | Operator precedence    |                        | Augmented assignment   |                        | for loop               |                        |
-|                        | Logical operators      |                        |                        |                        | memory mapping         |                        |
-|                        | Numeric ranges         |                        |                        |                        | Short circuit eval     |                        |
-|                        |                        |                        |                        |                        | `HW 2`                 |                        |
+|                        | Operator precedence    |                        | Augmented assignment   |                        | `HW 2`                 |                        |
+|                        | Logical operators      |                        |                        |                        |                        |                        |
+|                        | Numeric ranges         |                        |                        |                        |                        |                        |
+|                        |                        |                        |                        |                        |                        |                        |
 |------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
 | 8                      | 9                      |                     10 | 11                     |                     12 | 13                     |                     14 |
-| Week 5                 | while loop             |                        | Sentinel control       |                        | break / continue       |                        |
-|                        | infinite loop          |                        | Input validation       |                        | nested for loop        |                        |
-|                        | Running total          |                        |                        |                        |                        |                        |
-|                        |                        |                        |                        |                        |                        |                        |
-|                        |                        |                        |                        |                        |                        |                        |
+| Week 5                 | Short circuit eval     |                        | while loop             |                        | break / continue       |                        |
+|                        | for loop               |                        | Input validation       |                        | nested for loop        |                        |
+|                        | Running total          |                        | Sentinel control       |                        |                        |                        |
+|                        |                        |                        | Memory mapping         |                        |                        |                        |
+|                        |                        |                        | infinite loop          |                        |                        |                        |
 |------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
 | 15                     | 16                     |                     17 | 18                     |                     19 | 20                     |                     21 |
-| Week 6                 | Functions              |                        | `HW 3`                 |                        | `Quiz 3`               |                        |
-|                        |                        |                        |                        |                        |                        |                        |
+| Week 6                 |                        |                        | `HW 3`                 |                        | `Quiz 3`               |                        |
+|                        |                        |                        | Functions              |                        |                        |                        |
 |                        |                        |                        |                        |                        |                        |                        |
 |                        |                        |                        |                        |                        |                        |                        |
 |                        |                        |                        |                        |                        |                        |                        |
