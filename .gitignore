@@ -9,9 +9,10 @@
 *.txt
 CaesarCipherDecode.java
 
-# Ignore Programming Assignments folders
+# Ignore the following folders
 PA/
 Backup/
+.idea/
 
 # Ignore specific files
 blackjack_gui.py
