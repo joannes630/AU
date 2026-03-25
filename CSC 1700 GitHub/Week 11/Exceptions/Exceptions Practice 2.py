@@ -27,3 +27,4 @@ with open("numbers.txt", "r") as file:
         total += num
         count += 1
 print(f"Average is {total / count:.2f}")
+
