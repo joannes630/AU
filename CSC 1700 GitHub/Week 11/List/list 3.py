@@ -1,80 +1,125 @@
 """
-In addition to a running total, we can do other operations
-on a list, like searching for the maximum value
+Search and print the maximum value of the list below.
+Do not use the function max().
+
+max = 0
+for num in numbers:
+max = num
+max = numbers[0]
+print(max)
+if num > max:
+if num < max:
 """
-list = [123, 645, 75, 902, 433, 22]
-max = list[0]
-for num in list:
+numbers = [123, 645, 75]
+max = numbers[0]
+for num in numbers:
     if num > max:
         max = num
 print(max)
 
+
 """
-We can also search for the minimum value.
+Search and print the minimum value of the list below.
+Do not use the function min().
+
+min = 0
+for num in numbers:
+min = num
+min = numbers[0]
+print(min)
+if num > min:
+if num < min:
 """
-list = [123, 645, 75, 902, 433, 22]
-min = list[0]
-for num in list:
+numbers = [123, 645, 75]
+min = numbers[0]
+for num in numbers:
     if num < min:
         min = num
 print(min)
 
-"""
-We can search for a particular value in a list
-"""
-list = [123, 645, 75, 902, 433, 22]
-search = int(input("Enter a number to search: "))
-for num in list:
-    if search == num:
-        print(f"Found {search}")
-        break
-print("All done")
 
 """
-Now, what if the requirement is to print if a number
-is in the list. And if the number is not in the list
-print the number is not found?
-"""
-list = [123, 645, 75, 902, 433, 22]
-search = int(input("Enter a number to search: "))
+Ask the user for a number. Search if that number is in the list. 
+If that number is in the list, print "Found", otherwise, print "Not Found". 
+Do not use the in operator (except in the for loop).  
+Make sure your search is efficient.
+
 found = False
-for num in list:
+for num in numbers: 
+print("Found")
+if search == num:
+found = True
+print("Not Found")
+search = int(input("Enter a number: "))
+break
+if found:
+else:
+"""
+numbers = [123, 645, 75, 902, 433, 22]
+found = False
+search = int(input("Enter a number: "))
+for num in numbers: 
     if search == num:
         found = True
         break
 if found:
-    print(f"The number {search} is in the list")
+    print("Found")
 else:
-    print(f"The number {search} is not in the list")
+    print("Not Found")
+
 
 """
-We can also have a problem like, print the sum of all the
-even numbers in the list.
-"""
-list = [123, 645, 75, 902, 433, 22]
+Compute and print the sum of all the even numbers
+in the list.
+
 total = 0
-for num in list:
+for num in numbers:
+if num % 2 == 0:
+total += num
+print(total)
+if num % 2 == 1:
+"""
+numbers = [123, 645, 75, 902, 433, 22]
+total = 0
+for num in numbers:
     if num % 2 == 0:
         total += num
 print(total)
 
-"""
-Or, we can have a problem like, replace all the odd numbers
-in the list with that number plus 1
-"""
-list = [324, 232, 885, 23, 65]
-for i, num in enumerate(list):
-    if num % 2 == 1:
-        list[i] = num + 1
-print(list)
 
 """
-Another similar problem:
-Replace all numbers divisible by three in the list with
-zero. 
+Replace each odd number in the list with its value plus one.
+Print the list after replacing.
+
+if num % 2 == 1:
+for i, num in enumerate(numbers):
+numbers[i] = num + 1
+for num in numbers:
+if num % 2 == 0:
+print(numbers)
 """
-list = [324, 300, 366, 400]
-for i, num in enumerate(list):
+numbers = [324, 232, 885, 23, 65]
+for i, num in enumerate(numbers):
+    if num % 2 == 1:
+        numbers[i] = num + 1
+print(numbers)
+
+
+
+"""
+Replace each number that is perfectly divisible by three in the list with zero.
+Print the list after replacing.
+
+print(numbers)
+for i, num in enumerate(numbers):
+if num % 3 == 0:
+for num in numbers:
+num[i] = 0
+numbers[i] = 0
+"""
+numbers = [324, 300, 400, 366]
+for i, num in enumerate(numbers):
     if num % 3 == 0:
-        list[i] = 0
-print(list)
+        numbers[i] = 0
+print(numbers)
+

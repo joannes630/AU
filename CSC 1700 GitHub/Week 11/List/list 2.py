@@ -1,31 +1,57 @@
 """
-A list is mutable, meaning the elements in a list
-can be changed. We change the 2nd element (index 1)
-in the list from 233 to 342.
+Change the 2nd element in the list (index 1)
+from a value of 233 to 342.
+
+numbers[2] = 342
+numbers[1] = 342
+numbers(2) = 342
+numbers(1) = 342
 """
-list = [545, 233, 67, 23]
-print(list)
-list[1] = 342
-print(list)
+numbers = [545, 233, 67, 23]
+numbers[1] = 342
+
 
 """
-You can iterate through a list and process it so we can
-compute algorithms like a running total.
-"""
-list = [342, 65, 33, 12, 364, 87]
+Compute and print the total value of all the elements in the list
+below. Do not use the function sum().
+
 total = 0
-for num in list:
-    total += num
+count = 0
+for num in numbers:
+total += num
+total += numbers
+count += 1
+print(total)
+print(count)
+"""
+numbers = [342, 65, 33, 12, 364, 87]
+total = 0
+for num in numbers:
+    total += numbers
 print(total)
 
+
 """
-You can iterate through a list and process it so we can
-compute algorithms like an average of the values.
+Compute and print the average value (round to two decimal places) 
+of all the elements in the list below. Do not use the function sum().
+
+total = 0
+for num in numbers:
+total += num
+total += numbers
+count += 1
+print(total)
+count = 0
+print(count)
+print(f"{total/count:.2f}")
+print(f"{total/count:2f}")
+print("{total/count:.2f}")
+print(f"{total/len(numbers):.2f}")
 """
 list = [342, 65, 33, 12, 364, 87]
 total = 0
 count = 0
-for num in list:
+for num in numbers:
     total += num
     count += 1
 print(f"{total/count:.2f}")
