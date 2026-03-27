@@ -107,8 +107,8 @@ print(numbers)
 
 
 """
-Replace each number that is perfectly divisible by three in the list with zero.
-Print the list after replacing.
+Replace each number that is perfectly divisible by three in the list 
+with zero. Print the list after replacing.
 
 print(numbers)
 for i, num in enumerate(numbers):
