@@ -10,6 +10,7 @@ Get-Location
 
 # Print contents of current directory (ls)
 Get-ChildItem
+Get-ChildItem | Format-Table
 
 # Print contents of current directory, including hidden files (ls -a)
 Get-ChildItem -Force
