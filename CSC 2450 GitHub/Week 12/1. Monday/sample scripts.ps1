@@ -47,14 +47,6 @@ $name = Read-Host "Enter your name"
 
 # Display a greeting
 Write-Output "Hello, $name!
-#
-#
-# # Basic syntax of an if-else
-if (condition) {
-    # code if true
-} else {
-    # code if false
-}
 
 # User input of a string
 $name = Read-Host "Enter name"
