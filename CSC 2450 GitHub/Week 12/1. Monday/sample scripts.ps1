@@ -1,6 +1,10 @@
 # To show Powershell version
 $PSVersionTable.PSVersion
 
+# To show Pester version
+Get-Module Pester
+(Get-Module -Name Pester -ListAvailable).Version
+
 # To invoke Pester (bats)
 Invoke-Pester 
 

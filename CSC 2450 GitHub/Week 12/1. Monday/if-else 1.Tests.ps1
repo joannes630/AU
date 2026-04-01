@@ -1,28 +1,30 @@
-Describe "String Comparison Script" {
+Describe "Name Match Script" {
 
-    It "returns 'Match' when input starts with a J" {
+    It "outputs Match when name starts with J" {
 
-        # Mock user input
-        Mock Read-Host { "James" }
+        # Mock input
+        Mock Read-Host { "John" }
 
-        # Run script and capture output
-        $output = . "$PSScriptRoot\if-else 1.ps1"
+        # Run script
+        $output = & {
+            . "$PSScriptRoot\if-else 1.ps1"
+        }
 
-        # Verify output
-        ($output -join "`n") -like "*Match*" | Should Be $true
+        # Verify
+        $output | Should -Be "Match"
     }
 
-    It "returns 'Does not match' when input does not start with a J" {
+    It "outputs Does not match when name does not start with J" {
 
-        # Mock user input
-        Mock Read-Host { "Kyle" }
+        # Mock input
+        Mock Read-Host { "Alice" }
 
-        # Run script and capture output
-        $output = . "$PSScriptRoot\if-else 1.ps1"
+        # Run script
+        $output = & {
+            . "$PSScriptRoot\if-else 1.ps1"
+        }
 
-        # Verify output
-        ($output -join "`n") -like "*Does not match*" | Should Be $true
+        # Verify
+        $output | Should -Be "Does not match"
     }
-
 }
-

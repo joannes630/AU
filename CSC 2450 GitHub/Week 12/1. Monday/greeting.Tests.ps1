@@ -3,12 +3,14 @@ Describe "Greeting Script" {
     It "displays the correct greeting" {
 
         # Mock user input
-        Mock Read-Host { "Joannes" }
+        Mock Read-Host { "John" }
 
         # Run the script and capture output
-        $output = . "$PSScriptRoot\greeting.ps1"
+        $output = & {
+            . "$PSScriptRoot\greeting.ps1"
+        }
 
-        # Verify output contains "Hello"
-        ($output -join "`n") -like "*Hello*" | Should Be $true
+        # Verify output
+        $output | Should -Be "Hello, John!"
     }
 }
