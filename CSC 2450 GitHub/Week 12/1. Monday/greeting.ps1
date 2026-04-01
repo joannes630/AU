@@ -16,3 +16,6 @@ $name = Reading-Host "Enter your name"
 
 #>
 
+$name = Read-Host "Enter your name"
+Write-Output "Hello, $name!"
+
