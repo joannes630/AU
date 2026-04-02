@@ -50,3 +50,23 @@ if ($num % 2 -eq 0) {
     Write-Output "Odd"
 }
 
+# get directories
+function Get-Directories {
+
+    while ($true) {
+        $SRC = Read-Host "Enter source directory"
+
+        if (Test-Path $SRC -PathType Container) {
+            break
+        } else {
+            Write-Output "Invalid source directory. Try again."
+        }
+    }
+
+    $DEST = Read-Host "Enter destination directory"
+
+    if (-not (Test-Path $DEST -PathType Container)) {
+        Write-Output "Destination does not exist. Creating..."
+        New-Item -ItemType Directory -Path $DEST | Out-Null
+    }
+}
