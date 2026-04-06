@@ -5,6 +5,7 @@ of numbers as input. The function should iterate through all rows and elements
 to find and return the maximum value. 
 
 If the input list is empty, the function should return None.
+You are not allowed to use the max function.
 
 for elem in row:
 max = nested_list[0][0]
