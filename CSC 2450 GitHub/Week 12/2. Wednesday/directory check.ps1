@@ -22,4 +22,12 @@ $path = Read-Host "Enter a path"
 }
 #>
 
+$path = Read-Host "Enter a path"
+if (Test-Path $path -PathType Container) {
+    Write-Output "Directory exists"
+} elseif (Test-Path $path -PathType Leaf) {
+    Write-Output "File exists"
+} else {
+    Write-Output "Not found"
+}
 

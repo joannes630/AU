@@ -18,5 +18,10 @@ $num = [int](Read-Host "Enter a number")
 Write-Output "Even"
 #>
 
-
+$num = [int](Read-Host "Enter a number")
+if ($num % 2 -eq 0) {
+    Write-Output "Even"
+} else {
+    Write-Output "Odd"
+}
 

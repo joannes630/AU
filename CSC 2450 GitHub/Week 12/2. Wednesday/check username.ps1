@@ -11,15 +11,23 @@ else, display `"Access Denied"`.
 
 Use an `if-elseif-else` structure to control the program flow.
 
-if ($username -eq "admin") {
 Write-Output "Access Denied"
 } else {
 Write-Output "Welcome Admin"
+if ($username -eq "admin") {
 } elseif ($username -eq "student") {
 $username = Read-Host "Enter username"
 Write-Output "Welcome Student"
 }
 #>
 
+$username = Read-Host "Enter username"
+if ($username -eq "admin") {
+    Write-Output "Welcome Admin"
+} elseif ($username -eq "student") {
+    Write-Output "Welcome Student"
+} else {
+    Write-Output "Access Denied"
+}
 
 

@@ -27,5 +27,16 @@ $score = [int](Read-Host "Enter a score (0-100)")
 } else {
 #>
 
-
+$score = [int](Read-Host "Enter a score (0-100)")
+if ($score -ge 90) {
+    Write-Output "A"
+} elseif ($score -ge 80) {
+    Write-Output "B"
+} elseif ($score -ge 70) {
+    Write-Output "C"
+} elseif ($score -ge 60) {
+    Write-Output "D"
+} else {
+    Write-Output "F"
+}
 
