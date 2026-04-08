@@ -1,9 +1,9 @@
 function Test {
-    $script:x = 20
-    Write-Output "$x"
+    $script:x = 5
+    Write-Host "$x"
 }
 
 $x = 10
 Test
-Write-Output "$x"
+Write-Host "$x"
 
