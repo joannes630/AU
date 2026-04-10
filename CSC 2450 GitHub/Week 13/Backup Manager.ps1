@@ -55,7 +55,7 @@ function Copy-Files {
         }
 
         Copy-Item $file.FullName -Destination $targetPath -ErrorAction SilentlyContinue
-        $FILE_COUNT++
+        $script:FILE_COUNT++
     }
 }
 
@@ -72,13 +72,13 @@ function Compress-Backup {
 # ==========================================
 function Log-Backup {
     $size = (Get-ChildItem $BACKUP_DIR -Recurse | Measure-Object -Property Length -Sum).Sum
-    $sizeMB = "{0:N2} MB" -f ($size / 1MB)
+    $sizeKB = "{0:N2} KB" -f ($size / 1KB)
 
     Set-Content $LOG_FILE "-----------------------------"
     Add-Content $LOG_FILE "Date: $(Get-Date)"
     Add-Content $LOG_FILE "Backup Folder: $BACKUP_DIR"
     Add-Content $LOG_FILE "Files Copied: $FILE_COUNT"
-    Add-Content $LOG_FILE "Total Size: $sizeMB"
+    Add-Content $LOG_FILE "Total Size: $sizeKB"
 }
 
 # ==========================================
