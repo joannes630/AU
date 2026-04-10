@@ -95,8 +95,6 @@ function Generate-Report {
     $LOG_COUNT = ($files | Where-Object { $_.Extension -eq ".log" }).Count
     $SH_COUNT = ($files | Where-Object { $_.Extension -eq ".sh" }).Count
 
-    $DISK = Get-PSDrive -PSProvider FileSystem | Where-Object { $_.Root -like "$DEST*" } | Select-Object -First 1
-
     Set-Content $REPORT_FILE "=========== REPORT ==========="
     Add-Content $REPORT_FILE "Date: $(Get-Date)"
     Add-Content $REPORT_FILE "Total Files: $TOTAL_FILES"
@@ -104,7 +102,6 @@ function Generate-Report {
     Add-Content $REPORT_FILE ".txt files: $TXT_COUNT"
     Add-Content $REPORT_FILE ".log files: $LOG_COUNT"
     Add-Content $REPORT_FILE ".sh files: $SH_COUNT"
-    Add-Content $REPORT_FILE "Free Space: $($DISK.Free)"
     Add-Content $REPORT_FILE "=============================="
 }
 
