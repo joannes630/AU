@@ -10,7 +10,7 @@ $REPORT_FILE = "report.txt"
 # ==========================================
 function Get-Directories {
     while ($true) {
-        $SRC = Read-Host "Enter source directory"
+        $script:SRC = Read-Host "Enter source directory"
         if (Test-Path $SRC -PathType Container) {
             break
         } else {
@@ -18,7 +18,7 @@ function Get-Directories {
         }
     }
 
-    $DEST = Read-Host "Enter destination directory"
+    $script:DEST = Read-Host "Enter destination directory"
 
     if (-not (Test-Path $DEST -PathType Container)) {
         Write-Output "Destination does not exist. Creating..."
@@ -45,10 +45,16 @@ function Copy-Files {
         Where-Object { $_.Extension -in ".txt", ".log", ".sh" }
 
     foreach ($file in $files) {
+        Write-Host $SRC
+        Write-HOst $SRC.Length
         $relativePath = $file.FullName.Substring($SRC.Length)
+        Write-Host "file = $file"
+        Write-Host "relativePath = $relativePath"
         $targetPath = Join-Path $BACKUP_DIR $relativePath
-
+        Write-Host "targetPath = $targetPath"
         $targetDir = Split-Path $targetPath
+        Write-Host "targetDir = $targetDir"
+
         if (-not (Test-Path $targetDir)) {
             New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
         }
@@ -139,7 +145,7 @@ while ($true) {
         "1" { Run-Backup }
         "2" { Get-Content $LOG_FILE }
         "3" { Get-Content $REPORT_FILE }
-        "4" { Write-Output "Exiting..."; break }
+        "4" { Write-Output "Exiting..."; exit }
         default { Write-Output "Invalid option. Try again." }
     }
 }
