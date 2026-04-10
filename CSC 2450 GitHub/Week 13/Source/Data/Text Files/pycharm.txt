@@ -1,0 +1,24 @@
+# print(x,y)
+name = "john"
+age = 48
+# print("name is /t", name, "\n")
+# print("age is /t", age , "\n")
+# print(age)
+# print (f"My name is {name} and I am {age} years old")
+# print ("my name is", name, "and I am ", age + 5,   " in five years")
+# print (age)
+
+# print(f"Name is {name}")
+# print ("name is", name)
+
+# print (1,2,3, sep=",")
+
+is_enrolled = True
+
+# print("Hello, ", end =" ")
+#print ("world!")
+
+int = 21;
+
+x = "10.5"
+print(type(x))
