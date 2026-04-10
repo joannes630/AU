@@ -40,20 +40,15 @@ function Create-BackupFolder {
 # ==========================================
 function Copy-Files {
     $script:FILE_COUNT = 0
-
     $files = Get-ChildItem -Path $SRC -Recurse -File |
         Where-Object { $_.Extension -in ".txt", ".log", ".sh" }
 
+    $COPY_SOURCE = (Get-Item $SRC)
+
     foreach ($file in $files) {
-        Write-Host $SRC
-        Write-HOst $SRC.Length
-        $relativePath = $file.FullName.Substring($SRC.Length)
-        Write-Host "file = $file"
-        Write-Host "relativePath = $relativePath"
+        $relativePath = $file.FullName.Substring($COPY_SOURCE.FullName.Length)
         $targetPath = Join-Path $BACKUP_DIR $relativePath
-        Write-Host "targetPath = $targetPath"
         $targetDir = Split-Path $targetPath
-        Write-Host "targetDir = $targetDir"
 
         if (-not (Test-Path $targetDir)) {
             New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
@@ -79,7 +74,7 @@ function Log-Backup {
     $size = (Get-ChildItem $BACKUP_DIR -Recurse | Measure-Object -Property Length -Sum).Sum
     $sizeMB = "{0:N2} MB" -f ($size / 1MB)
 
-    Add-Content $LOG_FILE "-----------------------------"
+    Set-Content $LOG_FILE "-----------------------------"
     Add-Content $LOG_FILE "Date: $(Get-Date)"
     Add-Content $LOG_FILE "Backup Folder: $BACKUP_DIR"
     Add-Content $LOG_FILE "Files Copied: $FILE_COUNT"
