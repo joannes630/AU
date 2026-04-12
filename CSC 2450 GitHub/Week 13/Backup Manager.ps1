@@ -55,7 +55,7 @@ function Copy-Files {
         }
 
         Copy-Item $file.FullName -Destination $targetPath -ErrorAction SilentlyContinue
-        $FILE_COUNT++
+        $script:FILE_COUNT++
     }
 }
 
@@ -72,7 +72,7 @@ function Compress-Backup {
 # ==========================================
 function Log-Backup {
     $size = (Get-ChildItem $BACKUP_DIR -Recurse | Measure-Object -Property Length -Sum).Sum
-    $sizeKB = "{0:N2} KB" -f ($size / 1MB)
+    $sizeKB = "{0:N2} KB" -f ($size / 1KB)
 
     Set-Content $LOG_FILE "-----------------------------"
     Add-Content $LOG_FILE "Date: $(Get-Date)"
@@ -89,7 +89,7 @@ function Generate-Report {
 
     $TOTAL_FILES = $files.Count
 
-    $LARGEST_FILE = $files | Sort-Object Length -Desc ending | Select-Object -First 1
+    $LARGEST_FILE = $files | Sort-Object Length -Descending | Select-Object -First 1
 
     $TXT_COUNT = ($files | Where-Object { $_.Extension -eq ".txt" }).Count
     $LOG_COUNT = ($files | Where-Object { $_.Extension -eq ".log" }).Count
