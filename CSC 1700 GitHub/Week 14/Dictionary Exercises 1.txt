@@ -1,0 +1,49 @@
+1. Create and Display a Dictionary
+Create a dictionary named phonebook with at least three names and phone numbers. Display the dictionary.
+
+2. Access a Value
+Using the dictionary below, ask the user for a name and print the corresponding phone number.
+Make sure to check first if the key is in the dictionary  before accessing.
+phonebook = {
+    "Chris": "555-1111",
+    "Katie": "555-2222",
+    "John": "555-3333"
+}
+
+3. Add a New Entry
+Using the dictionary below, ask the user for a name and phone number, then add it to the dictionary.
+phonebook = {
+    "Chris": "555-1111",
+    "Katie": "555-2222",
+    "John": "555-3333"
+}
+
+4. Update an Existing Entry
+Using the dictionary below, ask the user for a name and new phone number. Update it if it exists.
+Otherwise, inform the user it does not exist.
+phonebook = {
+    "Chris": "555-1111",
+    "Katie": "555-2222",
+    "John": "555-3333"
+}
+
+5. Remove an Entry
+Using the dictionary below, ask the user for a name and remove it if it exists.
+If it does not exists, let the user know.
+phonebook = {
+    "Chris": "555-1111",
+    "Katie": "555-2222",
+    "John": "555-3333"
+}
+
+6. Loop Through Dictionary
+Using the dictionary below, loop through the dictionary and print each name and phone number.
+phonebook = {
+    "Chris": "555-1111",
+    "Katie": "555-2222",
+    "John": "555-3333"
+}
+
+7. Using the dictionary below, find Maximum Value (grade) and print it.
+grades = {"Alice": 85, "Bob": 92, "Charlie": 78}
+
