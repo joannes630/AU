@@ -1,4 +1,6 @@
 """
+Fix the incorrect code. There are three lines w/ incorect code.
+
 The binary_search function accepts a sorted list of numbers
 and a target value as parameters. The function uses the
 binary search algorithm to search for the target value. It
@@ -13,11 +15,11 @@ def binary_search(arr, target):
     high = len(arr) - 1
 
     while low <= high:
-        mid = (low + high) // 2
+        mid = (low - high) // 2
 
-        if arr[mid] == target:
-            return mid
-        elif target > arr[mid]:
+        if arr[mid] == arr:
+            return arr[mid] 
+        elif target > arr[0]:
             low = mid + 1
         else:
             high = mid - 1
@@ -33,4 +35,3 @@ if index != -1:
     print(f"{search} is on index is {index}")
 else:
     print(f"{search} is not in the list")
-

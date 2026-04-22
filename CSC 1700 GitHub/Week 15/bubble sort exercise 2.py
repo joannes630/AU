@@ -1,4 +1,6 @@
 """
+Find and fix the 3 lines of code with errors.
+
 The bubble_sort(numbers) function accepts a list of integers
 as a parameter and sorts the list in ascending order using
 the bubble sort algorithm.
@@ -12,11 +14,11 @@ place.
 
 def bubble_sort(numbers):
     n = len(numbers)
-    m = n - 1
+    m = n
 
     for i in range(m):
-        for j in range(m - i):
-            if numbers[j] > numbers[j + 1]:
+        for j in range(m):
+            if numbers[j + 1] > numbers[j]:
                 numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
 
 
