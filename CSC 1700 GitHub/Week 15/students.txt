@@ -1,0 +1,10 @@
+John Doe, 78, 90, 92, 88, 79, 998342, Computer Science, Freshman
+Kyle Gonzalez, 89, 96, 92, 75, 76, 123645, Cybersecurity, Sophomore
+Alice Tan, 69, 55, 42, 45, 76, 864556, Mathematics, Freshman
+Maria Lopez, 85, 88, 91, 87, 90, 552134, Biology, Freshman
+David Kim, 72, 75, 70, 68, 74, 774221, Mathematics, Sophomore
+Sophia Patel, 95, 93, 97, 94, 96, 334567, Computer Science, Junior
+James Wilson, 60, 65, 58, 62, 64, 998877, Accounting, Junior
+Emma Brown, 88, 84, 82, 86, 85, 445566, Cybersecurity, Senior
+Laura Nguyen, 91, 89, 94, 92, 90, 223344, Computer Science, Sophomore
+Olivia Martin, 77, 80, 79, 81, 78, 667788, Criminal Justice, Freshman
