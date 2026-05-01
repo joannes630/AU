@@ -25,6 +25,6 @@ def run_program(input_data):
     return numbers[-1]
 
 def test_case_1():
-    inputs = ["0", "-1", "11", "5"]
+    inputs = ["-1", "11", "5"]
     input_data = "\n".join(inputs) + "\n"
     assert run_program(input_data) == "5"
