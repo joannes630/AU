@@ -1,0 +1,21 @@
+Assuming user enters the following values: 5, 7, 3, -1
+Write the memory map for this run
+
+total = 0
+count = 0
+while True:
+    number = int(input("Enter a number (-1 to stop): "))
+    if number == -1:
+        print(total, count)
+        break
+    total += number
+    count += 1
+
+MEMORY MAP:
+
+number total count Output
+       0     0
+5      5     1
+7      12    2
+3      15    3
+-1                 15 3

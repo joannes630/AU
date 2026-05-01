@@ -1,0 +1,10 @@
+Write proper function calls to these function headers.
+a) def add(x, y):
+b) def greeting(name):
+c) def menu():
+
+Write the function headers to these function calls.
+a) x = subtract(6, 2)
+b) largest = find_largest(list):
+c) status = find_value(list, x):
+

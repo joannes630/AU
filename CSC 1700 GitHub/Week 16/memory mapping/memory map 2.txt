@@ -1,0 +1,16 @@
+Write the memory map for this run
+
+total = 0
+for i in range(2):
+    for j in range(3):
+        total += i + j
+print(total)
+
+Memory Map
+i   j   total Output
+0   0   0
+0   1   1
+0   2   3
+1   0   4
+1   1   6
+1   2   9     9
