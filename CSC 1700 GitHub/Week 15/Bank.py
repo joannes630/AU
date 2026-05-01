@@ -33,24 +33,31 @@ class Bank:
         self.balance = balance
 
     def __str__(self):
-        return f"Name: {self.name}, Balance: {self.balance:.2f}"
+        return f"Name: {self.name}, Balance: ${self.balance:.2f}"
 
     def deposit(self, amount):
         self.balance += amount
 
     def withdraw(self, amount):
-        print(f"Withdraw of {amount:.2f}")
         if amount <= self.balance:
-            self. balance -= amount
+            self.balance -= amount
         else:
-            print(f"Balance is too low, try a smaller withdrawal")
+            print("Insufficent funds...")
+            
+account1 = Bank("Joe", 500)
+print(account1)
 
-account1 = Bank("Alice", 0)
-print(account1)
-account1.deposit(100)
-print(account1)
-account1.withdraw(200)
+account2 = Bank("Mary", 1000)
+print(account2)
 
-account1.withdraw(20)
+account1.deposit(200)
 print(account1)
+
+account2.withdraw(2000)
+print(account2)
+
+account2.withdraw(20)
+print(account2)
+
+
 

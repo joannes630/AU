@@ -25,13 +25,14 @@ After creating the class, write code that:
 4. Prints the updated object.
 5. Displays the name and grade separately using the getter methods.
 """
+
 class Student:
     def __init__(self, name, grade):
         self.name = name
         self.grade = grade
 
     def __str__(self):
-        return f"Student: {self.name}, Grade: {self.grade:.2f}"
+        return f"Name: {self.name}, Grade: {self.grade}"
 
     def set_name(self, name):
         self.name = name
@@ -45,8 +46,23 @@ class Student:
     def get_grade(self):
         return self.grade
 
-student1 = Student("Joannes", 85.00)
-student2 = Student("Alice", 92.00)
+student1 = Student("John", 92.56)
 print(student1)
+
+student2 = Student("Alice", 96.56)
 print(student2)
+
+student1.set_grade(95.00)
+print(student1.get_grade())
+
+
+
+
+
+
+
+
+
+
+
 
