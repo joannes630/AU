@@ -12,6 +12,7 @@ Backup/
 .idea/
 
 # Ignore specific files
+~*
 blackjack_gui.py
 blackjack_gui3.py
 blackjack_gui_with_bet.py
