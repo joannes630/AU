@@ -1,0 +1,5 @@
+-- 1. Display the names of all students whose major is Computer Science
+-- 2. Display the names of all students with GPA of 3.5 and above
+-- 3. Display the names of all courses, along with the instructors teaching them
+-- 4. Display the names of all students enrolled in College Algebra, along with their student IDs and GPA
+-- 5. Display the names of instructors that are not assigned any course to teach

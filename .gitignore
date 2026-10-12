@@ -4,6 +4,7 @@
 *.keep
 *.class
 *.exe
+*.swp
 CaesarCipherDecode.java
 
 # Ignore the following folders
