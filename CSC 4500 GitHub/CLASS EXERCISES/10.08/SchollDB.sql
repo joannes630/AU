@@ -9,20 +9,19 @@ CREATE TABLE Student (
   GPA DECIMAL(2,1)
 );
 
+CREATE TABLE Faculty (
+  ID INT PRIMARY KEY,
+  Name VARCHAR(100),
+  Room CHAR(10)
+  );
+
 CREATE TABLE Course (
   ID CHAR(7) PRIMARY KEY,
   Name VARCHAR(100),
   Credits INT,
   Department VARCHAR(20),
-  FacultyID INT
-);
-
-CREATE TABLE Faculty (
-  ID INT PRIMARY KEY,
-  Name VARCHAR(100),
-  Room CHAR(10),
-  CourseID CHAR(7),
-  FOREIGN KEY(CourseID) REFERENCES Course(ID)
+  FacultyID INT,
+  FOREIGN KEY(FacultyID) REFERENCES Faculty(ID)
 );
 
 CREATE TABLE Enrollment (
@@ -49,6 +48,12 @@ INSERT INTO Student (ID, Name, Major, GPA) VALUES
     (1011, 'Anna Davis', 'Business', 2.5),
     (1012, 'Leo Hernandez', 'Biology', 3.6);
 
+
+INSERT INTO Faculty (ID, Name, Room) VALUES
+    (201, 'Dr. Robert Miller', 'ROOM 201'),
+    (202, 'Dr. Susan Clark', 'ROOM 305'),
+    (203, 'Mr. Michael Chen', 'ROOM 410');
+    
 INSERT INTO Course (ID, Name, Credits, Department, FacultyID) VALUES
     ('CSC1700', 'Introduction to Programming', 3, 'Computer Science', 201),
     ('CSC4500', 'Database Systems', 3, 'Computer Science', 201),
@@ -56,10 +61,6 @@ INSERT INTO Course (ID, Name, Credits, Department, FacultyID) VALUES
     ('MAT1500', 'College Algebra', 3, 'Mathematics', 203),
     ('BUS2000', 'Principles of Management', 3, 'Business', 203);
 
-INSERT INTO Faculty (ID, Name, Room, CourseID) VALUES
-    (201, 'Dr. Robert Miller', 'ROOM 201', 'CSC1700'),
-    (202, 'Dr. Susan Clark', 'ROOM 305', 'BIO1100'),
-    (203, 'Mr. Michael Chen', 'ROOM 410', 'MAT1500');
     
 INSERT INTO Enrollment (StudentID, CourseID, Semester, Grade) VALUES
     (1001, 'CSC1700', 'Fall 2026', 'A'),
@@ -74,3 +75,4 @@ INSERT INTO Enrollment (StudentID, CourseID, Semester, Grade) VALUES
     (1010, 'CSC1700', 'Spring 2026', 'A'),
     (1011, 'CSC4500', 'Spring 2026', 'C'),
     (1012, 'CSC4500', 'Fall 2026', 'B');
+    
