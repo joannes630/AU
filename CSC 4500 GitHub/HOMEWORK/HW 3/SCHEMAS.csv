@@ -1,4 +1,4 @@
-﻿AVAILABLE
+﻿AVAILABLE,,,,
 #,Scenario,Main entities,Junction table,Possible relationship attributes
 1,Course enrollment,Student ↔ Course,Enrollment,"Semester, enrollment date, grade"
 2,Library borrowing,Member ↔ Book,Loan,"Checkout date, due date, return date"
@@ -10,7 +10,7 @@
 16,Training enrollment,Employee ↔ TrainingSession,TrainingEnrollment,"Registration date, completion status"
 17,Tutoring sessions,Tutor ↔ Student,TutoringSession,"Date/time, subject, duration"
 18,Research collaboration,Researcher ↔ Paper,PaperContributor,"Contribution role, author order"
-UNAVAILABLE
+UNAVAILABLE,,,,
 19,Game participation,Player ↔ GameSession,Participation,"Score, team, result"
 7,Club membership,Student ↔ Club,Membership,"Join date, position"
 11,Book authorship,Author ↔ Book,Authorship,"Author order, contribution role"
