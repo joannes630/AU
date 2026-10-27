@@ -1,6 +1,5 @@
 ﻿AVAILABLE,,,,
 #,Scenario,Main entities,Junction table,Possible relationship attributes
-5,Online shopping,CustomerOrder ↔ Product,OrderItem,"Quantity, unit price"
 8,Event registration,Attendee ↔ Event,Registration,"Registration date, ticket type"
 10,Movie casting,Actor ↔ Movie,Casting,"Character name, billing order"
 13,Employee skills,Employee ↔ Skill,EmployeeSkill,"Proficiency level, years of experience"
@@ -9,6 +8,7 @@
 17,Tutoring sessions,Tutor ↔ Student,TutoringSession,"Date/time, subject, duration"
 18,Research collaboration,Researcher ↔ Paper,PaperContributor,"Contribution role, author order"
 UNAVAILABLE,,,,
+5,Online shopping,CustomerOrder ↔ Product,OrderItem,"Quantity, unit price"
 1,Course enrollment,Student ↔ Course,Enrollment,"Semester, enrollment date, grade"
 2,Library borrowing,Member ↔ Book,Loan,"Checkout date, due date, return date"
 19,Game participation,Player ↔ GameSession,Participation,"Score, team, result"
