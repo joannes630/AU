@@ -14,28 +14,15 @@ VALUES ('A', 500.00),
 DELIMITER //
 CREATE PROCEDURE transfer_100()
 BEGIN   
-    DECLARE EXIT HANDLER FOR SQLEXCEPTION
-    BEGIN
-        ROLLBACK;
-        RESIGNAL;
-    END;
-
     START TRANSACTION;
     UPDATE accounts
     SET balance = balance - 100  
-    WHERE account_id = 'A' AND balance >= 100;  -- insert an error to purposely make it not match
-    IF ROW_COUNT() <> 1 THEN
-        SIGNAL SQLSTATE '45000'
-            SET MESSAGE_TEXT = 'Account A is missing or has insufficient funds';
-    END IF;
+    WHERE account_id = 'A' AND balance >= 100; 
 
     UPDATE accounts
     SET balance = balance + 100
     WHERE account_id = 'B';
-        IF ROW_COUNT() <> 1 THEN
-        SIGNAL SQLSTATE '45000'
-            SET MESSAGE_TEXT = 'Account B is missing';
-    END IF;
+
     COMMIT;
 
 END//

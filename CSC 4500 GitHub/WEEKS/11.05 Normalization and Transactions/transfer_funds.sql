@@ -16,7 +16,7 @@ CREATE PROCEDURE transfer_100()
 BEGIN   
     UPDATE accounts
     SET balance = balance - 100  
-    WHERE account_id = 'A' AND balance >= 100;  -- insert an error to purposely make it not match
+    WHERE account_id = 'A' AND balance >= 100; 
 
     UPDATE accounts
     SET balance = balance + 100
