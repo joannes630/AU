@@ -5,7 +5,7 @@ USE transfer_demo;
 CREATE TABLE accounts (
     account_id CHAR(1) PRIMARY KEY,
     balance DECIMAL(10, 2) NOT NULL
-) ENGINE = InnoDB;
+);
 
 INSERT INTO accounts (account_id, balance)
 VALUES ('A', 500.00),
